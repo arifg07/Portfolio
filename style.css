@@ -108,10 +108,13 @@ body {
     text-align: justify;
 }
 
-.home-img {
+/* .home-img {
     margin-left: 200px;
-}
+} */
 .home-img2 {
+    position: absolute;
+    left: 950px;
+    top: 200px;
     width: 400px;
     height: 400px;
     border-radius: 50%;
@@ -811,7 +814,7 @@ section{
         opacity: 1;
     }
 }
-
+/* 
 
 @media screen and (max-width:600px) 
 {
@@ -887,4 +890,4 @@ section{
 
 
 
-}
+} */
