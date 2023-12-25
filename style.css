@@ -840,7 +840,7 @@ section{
 }
 .home-content p {
     font-size: 17px;
-    margin-left: 20px;
+    margin-left: 25px;
     text-align:justify;
     line-height: 1.5;
 }
@@ -849,7 +849,7 @@ section{
     height: 170px;
     position: absolute;
     top: 50px;
-    left: 220px;
+    left: 250px;
     border-style:ridge;
     border-width: 10px;
     
