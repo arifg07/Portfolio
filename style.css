@@ -173,6 +173,7 @@ body {
         0 0 100px cyan, 0 0 200px cyan
 }
 .about{
+    background-image: url('./bck3.jpeg');
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -829,6 +830,7 @@ section{
     
 .home-content {
     max-width: 300px;
+    margin-top: 60px;
 }
 
 .home-content h3 {
@@ -840,7 +842,7 @@ section{
 }
 .home-content p {
     font-size: 17px;
-    margin-left: 25px;
+    margin-left: 20px;
     text-align:justify;
     line-height: 1.5;
 }
@@ -887,6 +889,43 @@ section{
     
 }
 
+.about{
+    background-image: url('./mbck3.jpeg');
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    width:100%;
+    height: 1000px;
+    
+}
+.about-text {
+    margin-top: -280px;
+}
+.about-text h2{
+    font-size: 40px;
+    margin-left: -245px;
+    margin-top: -10px;
+}
+.about-text h4{
+    font-size: 25px;
+    margin-left: -330px;
+}
+.about-text p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: -330px;
+    font-family:'Times New Roman', Times, serif;
+    text-align:justify;
+}
+.about-img img{
+    height: 320px;
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: -500px;
+    border: 5px solid #0ef;
+    margin-left: 50px;
+}
 
 
 }
