@@ -106,6 +106,7 @@ body {
     animation-delay: 1s;
     line-height: 1.5;
     text-align: justify;
+    margin-left: 30px;
 }
 
 /* .home-img {
@@ -819,8 +820,13 @@ section{
 
 @media screen and (max-width:600px) 
 {
+   
+   
     .logo {
         font-size: 25px;
+    }
+    .header {
+        width: 412px;
     }
     .home {
         background-image: url('./mbck1.jpeg');
@@ -829,7 +835,13 @@ section{
     }
 
     .navbar{
-        display:none;
+        /* display:none; */
+    }
+    .navbar a {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 5px;
     }
     
 .home-content {
