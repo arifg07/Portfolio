@@ -818,7 +818,7 @@ section{
 }
 
 
-@media screen and (max-width:450px) 
+@media screen and (max-width:600px) 
 {
    
    
@@ -1042,16 +1042,9 @@ section{
     
 }
 
-
-
-
-
-
-
-
 .contact{
     padding-left: 30px;
-    margin-top: 180px;
+    margin-top: 250px;
     margin-left: -80px;
     height: 930px;
     width:100%;
@@ -1061,7 +1054,7 @@ section{
     font-size: 40px;
     line-height: 1.2;
     margin-left: 150px;
-    margin-top: -150px;
+    margin-top: -100px;
     margin-bottom: -200px;
 
 }
@@ -1085,11 +1078,11 @@ section{
     border: 2px solid #0ef;
     border-radius: 50%;
     font-size: 20px;
-    margin: 310px -90px -120px 120px;
+    margin: 390px -90px 0px 120px;
 }
 
 .contact-form form{
-    margin: 240px 20px 200px -250px;
+    margin: 350px 20px 200px -250px;
     width: 350px;
 }
 
