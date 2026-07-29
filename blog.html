@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Mahammad Arif G A</title>
+<meta name="description" content="Notes on full-stack development and e-commerce digital marketing, by Mahammad Arif G A.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="header scrolled" id="header">
+  <a href="index.html#top" class="logo">MA<span class="dot">.</span></a>
+  <nav class="navbar" id="navbar">
+    <a href="index.html#about">About</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="resume.html">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <a href="index.html#contact" class="nav-cta">Let's talk</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <i class='bx bx-menu'></i>
+  </button>
+</header>
+
+<main class="page-hero">
+  <p class="section-eyebrow">Blog</p>
+  <h1>Notes from the intersection of code and growth</h1>
+  <p class="page-hero-sub">Short, practical write-ups on WooCommerce, SEO, and running paid campaigns as someone who also builds the site — edit or replace these with your own posts any time.</p>
+</main>
+
+<section class="section blog-list">
+
+  <article class="blog-post reveal" id="post-1">
+    <div class="blog-post-meta">
+      <span class="tag">SEO</span>
+      <span class="blog-date">Jul 2026</span>
+    </div>
+    <h2>Why your WooCommerce SEO should start with the product page, not the blog</h2>
+    <p>Most WooCommerce SEO advice starts with content marketing — write blog posts, build backlinks, wait. In practice, the fastest wins usually come from the product pages themselves, because that's what's actually meant to rank and convert.</p>
+    <p>Three things I check first on any store: whether the product title and meta description actually contain the terms a buyer would search (not just the brand's internal naming), whether product images have descriptive alt text, and whether the page loads fast on mobile — WooCommerce sites get slow quickly once you add a few marketing plugins on top of the theme. Fixing those three before touching content usually moves organic traffic more than a month of blog posts.</p>
+    <p>Technical SEO and product optimization aren't glamorous, but they're the layer everything else sits on. Get that right first, then layer content and backlinks on top.</p>
+  </article>
+
+  <article class="blog-post reveal" id="post-2">
+    <div class="blog-post-meta">
+      <span class="tag">Paid Ads</span>
+      <span class="blog-date">Jun 2026</span>
+    </div>
+    <h2>Running Google and Meta Ads for the same store: what actually changes</h2>
+    <p>It's tempting to treat Google Ads and Meta Ads as the same job with a different dashboard. They're not — the intent is different, and the creative that works on one usually underperforms on the other.</p>
+    <p>On Google Search, people are already looking for the product — the ad's job is to be the most relevant, trustworthy-looking answer to a search they've already decided to make. On Meta, nobody was looking for you; the ad has to stop a scroll and create the want in the first place, which means the creative carries far more weight than the copy.</p>
+    <p>In practice that means running two different content pipelines, not one asset reused everywhere. It also means the metrics you optimize for should differ: search intent traffic can be judged on conversion rate fairly quickly, while social traffic needs a longer view since some of its value shows up as brand recall rather than an immediate sale.</p>
+  </article>
+
+  <article class="blog-post reveal" id="post-3">
+    <div class="blog-post-meta">
+      <span class="tag">Career</span>
+      <span class="blog-date">May 2026</span>
+    </div>
+    <h2>What changes when the developer also owns the marketing</h2>
+    <p>I started as a full-stack developer and moved into digital marketing almost by accident — a role needed someone who could do both. What surprised me is how much faster the feedback loop gets when the same person builds the landing page and reads the analytics on it.</p>
+    <p>Normally there's a handoff: a developer ships a page, a marketer runs traffic to it, and any mismatch between the two takes a meeting to surface and a sprint to fix. When it's the same person, you notice a page isn't converting and can go straight to the fix — sometimes that's a copy change, sometimes it's genuinely a loading-speed problem the marketing side would never have diagnosed.</p>
+    <p>I don't think everyone needs to learn both disciplines. But if you're early in either career, spending real time on the other side — even briefly — makes you noticeably better at your actual job.</p>
+  </article>
+
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year"></span></p>
+  <a href="index.html#top" class="top-link" aria-label="Back to home"><i class='bx bx-home-alt'></i></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
