@@ -37,8 +37,8 @@
   position: absolute;
   top: 50px;
   right: 56px;
-  width: 84px;
-  height: 84px;
+  width: 184px;
+  height: 184px;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -54,7 +54,7 @@
 
 .resume-contact {
   text-align: right;
-  margin-top: 98px;
+  margin-top: 18px;
 }
 .resume-contact li {
   display: flex;
