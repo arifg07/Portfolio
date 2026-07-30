@@ -5,6 +5,7 @@
 }
 
 .resume-sheet {
+  position: relative;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -32,13 +33,10 @@
   color: var(--accent-amber);
   margin-top: 6px;
 }
-.resume-head-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 14px;
-}
 .resume-photo {
+  position: absolute;
+  top: 50px;
+  right: 56px;
   width: 84px;
   height: 84px;
   border-radius: 16px;
@@ -56,6 +54,7 @@
 
 .resume-contact {
   text-align: right;
+  margin-top: 98px;
 }
 .resume-contact li {
   display: flex;
@@ -156,9 +155,12 @@
 
 @media (max-width: 760px) {
   .resume-sheet { padding: 34px 24px; }
+  .resume-photo {
+    position: static;
+    margin: 0 auto 20px;
+  }
   .resume-head { flex-direction: column; }
-  .resume-head-right { align-items: flex-start; }
-  .resume-contact { text-align: left; }
+  .resume-contact { text-align: left; margin-top: 0; }
   .resume-contact li { justify-content: flex-start; }
   .resume-cols { grid-template-columns: 1fr; }
 }
