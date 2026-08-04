@@ -14,6 +14,16 @@ if (window.Typed) {
   });
 }
 
+// ---------- Scroll progress bar ----------
+const scrollProgress = document.getElementById("scrollProgress");
+if (scrollProgress) {
+  window.addEventListener("scroll", () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    scrollProgress.style.width = scrolled + "%";
+  });
+}
+
 // ---------- Sticky header state ----------
 const header = document.getElementById("header");
 if (header) {
@@ -72,6 +82,82 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.15 });
 revealEls.forEach(el => revealObserver.observe(el));
+
+// ---------- Animated stat counters ----------
+const statNums = document.querySelectorAll(".stat-num");
+if (statNums.length) {
+  const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.dataset.target);
+      const suffix = el.dataset.suffix || "";
+      const isDecimal = String(target).includes(".");
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const value = target * eased;
+        el.textContent = (isDecimal ? value.toFixed(1) : Math.round(value)) + suffix;
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      statObserver.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  statNums.forEach(el => statObserver.observe(el));
+}
+
+// ---------- Card tilt + cursor spotlight ----------
+const tiltCards = document.querySelectorAll(".skill-card, .work-card, .case-block, .blog-post");
+tiltCards.forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const cx = rect.width / 2;
+    const cy = rect.height / 2;
+    const rotateX = ((y - cy) / cy) * -3;
+    const rotateY = ((x - cx) / cx) * 3;
+    card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+    card.style.setProperty("--mx", `${x}px`);
+    card.style.setProperty("--my", `${y}px`);
+  });
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "";
+  });
+});
+
+// ---------- Hero parallax on floating chips + window ----------
+const heroVisual = document.querySelector(".hero-visual");
+if (heroVisual && window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+  const chips = heroVisual.querySelectorAll(".floating-chip");
+  const win = heroVisual.querySelector(".window");
+  document.querySelector(".hero").addEventListener("mousemove", (e) => {
+    const rect = heroVisual.getBoundingClientRect();
+    const relX = (e.clientX - rect.left - rect.width / 2) / rect.width;
+    const relY = (e.clientY - rect.top - rect.height / 2) / rect.height;
+    chips.forEach((chip, i) => {
+      const depth = 14 + i * 6;
+      chip.style.transform = `translate(${relX * depth}px, ${relY * depth}px)`;
+    });
+    if (win) win.style.transform = `rotateX(${relY * -3}deg) rotateY(${relX * 3}deg)`;
+  });
+}
+
+// ---------- Magnetic buttons ----------
+document.querySelectorAll(".btn").forEach(btn => {
+  btn.addEventListener("mousemove", (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.15}px, ${y * 0.3}px)`;
+  });
+  btn.addEventListener("mouseleave", () => {
+    btn.style.transform = "";
+  });
+});
 
 // ---------- Contact form (mailto handoff) ----------
 const contactForm = document.getElementById("contactForm");
