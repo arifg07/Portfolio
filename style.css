@@ -137,6 +137,12 @@ img { max-width: 100%; display: block; }
   background:
     radial-gradient(ellipse 800px 500px at 85% 15%, var(--accent-cyan-dim), transparent 60%),
     radial-gradient(ellipse 700px 500px at 10% 90%, var(--accent-amber-dim), transparent 60%);
+  background-size: 140% 140%;
+  animation: heroDrift 18s ease-in-out infinite alternate;
+}
+@keyframes heroDrift {
+  0% { background-position: 0% 0%, 0% 0%; }
+  100% { background-position: 8% 6%, -6% -8%; }
 }
 
 .hero-inner {
@@ -228,7 +234,7 @@ img { max-width: 100%; display: block; }
   border-radius: 999px;
   border: 1px solid transparent;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: transform 0.15s ease-out, box-shadow 0.2s ease, background 0.2s ease;
 }
 .btn-primary {
   background: var(--accent-amber);
@@ -281,6 +287,8 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
 }
 
 .window-bar {
@@ -383,15 +391,11 @@ img { max-width: 100%; display: block; }
   border: 1px solid var(--border);
   border-radius: 999px;
   box-shadow: 0 12px 24px -8px rgba(0,0,0,0.5);
-  animation: floatChip 5s ease-in-out infinite;
+  transition: transform 0.15s ease-out;
 }
-.chip-1 { top: -18px; right: 20px; color: var(--accent-cyan); animation-delay: 0s; }
-.chip-2 { bottom: 40px; left: -22px; color: var(--accent-amber); animation-delay: 1.2s; }
-.chip-3 { bottom: -16px; right: 60px; color: var(--accent-cyan); animation-delay: 2.4s; }
-@keyframes floatChip {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
+.chip-1 { top: -18px; right: 20px; color: var(--accent-cyan); }
+.chip-2 { bottom: 40px; left: -22px; color: var(--accent-amber); }
+.chip-3 { bottom: -16px; right: 60px; color: var(--accent-cyan); }
 
 .scroll-cue {
   position: absolute;
@@ -459,11 +463,13 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(135deg, var(--accent-cyan-dim), var(--accent-amber-dim));
   border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display);
-  font-size: 56px;
-  font-weight: 700;
-  color: var(--text);
+  overflow: hidden;
   margin-bottom: 30px;
+}
+.avatar-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 .quick-facts li {
   display: flex;
@@ -743,8 +749,132 @@ img { max-width: 100%; display: block; }
 .top-link:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
 
 /* =========================================================
-   Responsive
+   Scroll progress bar
 ========================================================= */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-amber));
+  z-index: 200;
+  transition: width 0.1s ease-out;
+}
+
+/* =========================================================
+   Marquee ticker
+========================================================= */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elevated);
+  padding: 16px 0;
+  white-space: nowrap;
+}
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  animation: marqueeScroll 26s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text-muted);
+  padding: 0 4px;
+}
+.marquee-track i {
+  color: var(--accent-cyan);
+  font-size: 8px;
+  opacity: 0.6;
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* =========================================================
+   Stats strip
+========================================================= */
+.stats-strip {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.stat-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 46px);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent-cyan), var(--accent-amber));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.stat-label {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+/* =========================================================
+   Card tilt + glow interactions
+========================================================= */
+.skill-card, .work-card, .cert-card, .timeline-card, .case-block, .blog-post {
+  transform-style: preserve-3d;
+  will-change: transform;
+  position: relative;
+}
+.skill-card::before, .work-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(300px circle at var(--mx, 50%) var(--my, 50%), rgba(52,216,199,0.12), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.skill-card:hover::before, .work-card:hover::before { opacity: 1; }
+
+/* Magnetic buttons */
+.btn { will-change: transform; }
+
+/* Stagger children reveal */
+.stagger-parent .stagger-child {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.stagger-parent.in-view .stagger-child {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stagger-child:nth-child(1) { transition-delay: 0.05s; }
+.stagger-child:nth-child(2) { transition-delay: 0.12s; }
+.stagger-child:nth-child(3) { transition-delay: 0.19s; }
+.stagger-child:nth-child(4) { transition-delay: 0.26s; }
+.stagger-child:nth-child(5) { transition-delay: 0.33s; }
+.stagger-child:nth-child(6) { transition-delay: 0.40s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+@media (max-width: 760px) {
+  .stats-strip { grid-template-columns: repeat(2, 1fr); row-gap: 34px; }
+}
+
+
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { order: -1; max-width: 480px; margin: 0 auto; }
