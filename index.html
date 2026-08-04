@@ -17,6 +17,7 @@
 <link rel="shortcut icon" href="favicon.ico"></head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
 <div class="grain"></div>
 
 <header class="header" id="header">
@@ -112,6 +113,28 @@
   <a href="#about" class="scroll-cue" aria-label="Scroll to about"><i class='bx bx-chevron-down'></i></a>
 </section>
 
+<!-- ================= MARQUEE ================= -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>WordPress</span><i class='bx bx-diamond'></i>
+    <span>WooCommerce</span><i class='bx bx-diamond'></i>
+    <span>React</span><i class='bx bx-diamond'></i>
+    <span>SEO / SEM</span><i class='bx bx-diamond'></i>
+    <span>Google Ads</span><i class='bx bx-diamond'></i>
+    <span>Meta Ads</span><i class='bx bx-diamond'></i>
+    <span>Java</span><i class='bx bx-diamond'></i>
+    <span>Email Marketing</span><i class='bx bx-diamond'></i>
+    <span>WordPress</span><i class='bx bx-diamond'></i>
+    <span>WooCommerce</span><i class='bx bx-diamond'></i>
+    <span>React</span><i class='bx bx-diamond'></i>
+    <span>SEO / SEM</span><i class='bx bx-diamond'></i>
+    <span>Google Ads</span><i class='bx bx-diamond'></i>
+    <span>Meta Ads</span><i class='bx bx-diamond'></i>
+    <span>Java</span><i class='bx bx-diamond'></i>
+    <span>Email Marketing</span><i class='bx bx-diamond'></i>
+  </div>
+</div>
+
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
   <p class="section-eyebrow">01 — About</p>
@@ -133,6 +156,13 @@
       <p>Before that, I trained developers, built React front-ends at BB Leads, and worked as a Java full-stack intern at KodNest — so the code side isn't a side project, it's where I started. I like sitting at the intersection: I can ship the landing page and then tell you, from the analytics, whether it actually converted.</p>
     </div>
   </div>
+
+  <div class="stats-strip reveal">
+    <div class="stat"><span class="stat-num" data-target="3" data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
+    <div class="stat"><span class="stat-num" data-target="5" data-suffix="">0</span><span class="stat-label">Companies &amp; Trainings</span></div>
+    <div class="stat"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label">Certifications</span></div>
+    <div class="stat"><span class="stat-num" data-target="8.0" data-suffix="">0</span><span class="stat-label">CGPA / 10</span></div>
+  </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
@@ -140,8 +170,8 @@
   <p class="section-eyebrow">02 — Skills</p>
   <h2 class="section-title reveal">What I bring to a project</h2>
 
-  <div class="skills-grid reveal">
-    <div class="skill-card">
+  <div class="skills-grid reveal stagger-parent">
+    <div class="skill-card stagger-child">
       <div class="skill-card-head">
         <i class='bx bx-code-curly'></i>
         <h3>Development</h3>
@@ -153,7 +183,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card stagger-child">
       <div class="skill-card-head">
         <i class='bx bx-trending-up'></i>
         <h3>Digital Marketing</h3>
@@ -165,7 +195,7 @@
       </div>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-card stagger-child">
       <div class="skill-card-head">
         <i class='bx bx-palette'></i>
         <h3>Design &amp; Content</h3>
@@ -183,9 +213,9 @@
   <p class="section-eyebrow">03 — Experience</p>
   <h2 class="section-title reveal">Where I've worked</h2>
 
-  <div class="timeline reveal">
+  <div class="timeline reveal stagger-parent">
 
-    <div class="timeline-item">
+    <div class="timeline-item stagger-child">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <span class="timeline-date">Jul 2025 — Present</span>
@@ -200,7 +230,7 @@
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item stagger-child">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <span class="timeline-date">Mar 2025 — Jun 2025</span>
@@ -213,7 +243,7 @@
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item stagger-child">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <span class="timeline-date">Jul 2024 — Feb 2025</span>
@@ -226,7 +256,7 @@
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item stagger-child">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <span class="timeline-date">Apr 2023 — Jun 2024</span>
@@ -239,7 +269,7 @@
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item stagger-child">
       <div class="timeline-dot"></div>
       <div class="timeline-card">
         <span class="timeline-date">Oct 2022 — Mar 2023</span>
@@ -254,14 +284,14 @@
 
   </div>
 
-  <div class="certs reveal">
+  <div class="certs reveal stagger-parent">
     <h3 class="certs-title">Certifications</h3>
     <div class="certs-grid">
-      <div class="cert-card"><i class='bx bx-medal'></i><div><strong>Digital Marketing Excellence Award</strong><span>Navar Furniture · May 2026</span></div></div>
-      <div class="cert-card"><i class='bx bx-certification'></i><div><strong>Graphic Designing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
-      <div class="cert-card"><i class='bx bx-certification'></i><div><strong>Digital Marketing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
-      <div class="cert-card"><i class='bx bx-certification'></i><div><strong>Professional Video Editing</strong><span>KodNest Technologies · 2025</span></div></div>
-      <div class="cert-card"><i class='bx bx-certification'></i><div><strong>Java &amp; Python Full Stack Development</strong><span>KodNest Technologies · 2023</span></div></div>
+      <div class="cert-card stagger-child"><i class='bx bx-medal'></i><div><strong>Digital Marketing Excellence Award</strong><span>Navar Furniture · May 2026</span></div></div>
+      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Graphic Designing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
+      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Digital Marketing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
+      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Professional Video Editing</strong><span>KodNest Technologies · 2025</span></div></div>
+      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Java &amp; Python Full Stack Development</strong><span>KodNest Technologies · 2023</span></div></div>
     </div>
   </div>
 </section>
@@ -274,8 +304,8 @@
     <a href="case-studies.html" class="link-arrow">Read the full case studies <i class='bx bx-right-arrow-alt'></i></a>
   </div>
 
-  <div class="work-grid reveal">
-    <a class="work-card" href="https://travlen.web.app/" target="_blank" rel="noopener">
+  <div class="work-grid reveal stagger-parent">
+    <a class="work-card stagger-child" href="https://travlen.web.app/" target="_blank" rel="noopener">
       <div class="work-thumb thumb-1"><i class='bx bx-plane'></i></div>
       <div class="work-body">
         <h3>Travlen — Travel Agency Site</h3>
@@ -285,7 +315,7 @@
       <i class='bx bx-link-external work-link'></i>
     </a>
 
-    <a class="work-card" href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">
+    <a class="work-card stagger-child" href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">
       <div class="work-thumb thumb-2"><i class='bx bx-armchair'></i></div>
       <div class="work-body">
         <h3>Interior Design Showcase</h3>
@@ -295,7 +325,7 @@
       <i class='bx bx-link-external work-link'></i>
     </a>
 
-    <a class="work-card" href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">
+    <a class="work-card stagger-child" href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">
       <div class="work-thumb thumb-3"><i class='bx bx-hard-hat'></i></div>
       <div class="work-body">
         <h3>Labour Hiring Web App</h3>
