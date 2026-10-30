@@ -172,7 +172,8 @@ html.has-cur input, html.has-cur textarea { cursor: text !important; }
 .fill-text .k4 .sw.on { color: var(--amber); }
 
 /* ---------- Images: slots that look fine with or without a file ---------- */
-.about-side { display: grid; gap: 18px; }
+.about-side, .about-main { display: grid; gap: 18px; }
+.media.about-poster { aspect-ratio: 4 / 5; }
 .media { position: relative; overflow: hidden; border-radius: var(--radius); aspect-ratio: 4 / 3; border: 1px solid var(--border-strong); background: #0d1326; }
 .media-art {
   position: absolute; inset: 0; display: grid; place-items: center;
