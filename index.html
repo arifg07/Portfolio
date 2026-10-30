@@ -3,54 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahammad Arif G A — Full Stack Developer &amp; Digital Marketing Executive</title>
-<meta name="description" content="Portfolio of Mahammad Arif G A — Full Stack Developer and Digital Marketing Executive based in Dubai, UAE.">
+<title>Mahammad Arif G A — Digital Marketing Executive, Full Stack &amp; WordPress Developer</title>
+<meta name="description" content="Portfolio of Mahammad Arif G A — Digital Marketing Executive, Full Stack Developer and WordPress Developer in Dubai, UAE. WooCommerce, SEO, Google &amp; Meta Ads, React and Java.">
+<meta name="theme-color" content="#060913">
+<link rel="canonical" href="https://arifg07.github.io/Portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mahammad Arif G A — Digital Marketing Executive &amp; Full Stack Developer">
+<meta property="og:description" content="WordPress &amp; WooCommerce builds, SEO, paid media and React — based in Dubai, UAE.">
+<meta property="og:url" content="https://arifg07.github.io/Portfolio/">
+<meta property="og:image" content="https://arifg07.github.io/Portfolio/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script>
+  document.documentElement.classList.add('js');
+  /* safety net: never leave content hidden if the main script fails */
+  setTimeout(function () {
+    document.documentElement.classList.add('loaded');
+    if (!window.__ready) document.documentElement.classList.add('reveal-all');
+  }, 4200);
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="shortcut icon" href="favicon.ico"></head>
+
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="logo-512.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahammad Arif G A",
+  "jobTitle": "Digital Marketing Executive & Full Stack Developer",
+  "url": "https://arifg07.github.io/Portfolio/",
+  "image": "https://arifg07.github.io/Portfolio/profile.jpg",
+  "email": "mailto:arifjeermukki@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+  "alumniOf": "KVG College of Engineering",
+  "sameAs": ["https://github.com/arifg07", "https://linkedin.com/in/mahammad-arif-g-a-83595a222"]
+}
+</script>
+</head>
 <body>
 
+<!-- shared gradient for the progress rings -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34D8C7"/><stop offset=".55" stop-color="#7C6CFF"/><stop offset="1" stop-color="#FF7AC8"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-mark">MA<span>.</span></div>
+  <div class="pre-bar"><i></i></div>
+</div>
+
 <div class="scroll-progress" id="scrollProgress"></div>
-<div class="grain"></div>
 
 <header class="header" id="header">
-  <a href="https://arifg07.github.io/Portfolio/" class="logo">MA<span class="dot">.</span></a>
-  <nav class="navbar" id="navbar">
+  <a href="#top" class="logo" aria-label="Mahammad Arif — home">MA<span class="dot">.</span></a>
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
     <a href="#work">Work</a>
     <a href="case-studies.html">Case Studies</a>
     <a href="blog.html">Blog</a>
     <a href="resume.html">Resume</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a href="#contact" class="nav-cta">Let's talk</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+  <a href="#contact" class="nav-cta magnetic">Let's talk</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar">
     <i class='bx bx-menu'></i>
   </button>
 </header>
 
+<main>
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="pulse-dot"></span> Dubai, UAE - Open to Freelance Opportunities</p>
-      <h1>Mahammad <span class="accent-cyan">Arif</span></h1>
-      <h2 class="hero-role">I build <span class="typed-wrap"><span class="text"></span></span></h2>
-      <p class="hero-sub">Full Stack Developer and Digital Marketing Executive with 3+ years of experience shipping WordPress &amp; React storefronts, then growing them with SEO and paid media. I like projects where the code and the conversion rate are both my problem.</p>
-      <div class="hero-actions">
-        <a href="#work" class="btn btn-primary"><i class='bx bx-code-alt'></i> View my work</a>
-        <a href="Mahammad Arif G A [CV-2026].pdf" class="btn btn-ghost" download><i class='bx bx-download'></i> Download CV</a>
+      <p class="eyebrow enter" style="--d:100"><span class="pulse-dot"></span> Dubai, UAE · Open to new opportunities</p>
+      <h1 class="hero-name">
+        <span class="line split">Mahammad</span>
+        <span class="line grad-text">Arif G A</span>
+      </h1>
+      <ul class="hero-titles enter" style="--d:700" aria-label="Roles">
+        <li>Digital Marketing Executive</li>
+        <li>Full Stack Developer</li>
+        <li>WordPress Developer</li>
+      </ul>
+      <h2 class="hero-role enter" style="--d:800">I build <span class="typed-wrap"><span class="text">high-converting WooCommerce stores.</span></span></h2>
+      <p class="hero-sub enter" style="--d:900">Results-driven developer and marketer with 3+ years of experience building websites and running digital marketing campaigns. I deliver solutions that improve user experience, strengthen brand presence and drive business growth.</p>
+      <div class="hero-actions enter" style="--d:1000">
+        <a href="#work" class="btn btn-primary magnetic"><i class='bx bx-code-alt'></i> View my work</a>
+        <a href="Mahammad Arif G A [CV-2026].pdf" class="btn btn-ghost magnetic" download><i class='bx bx-download'></i> Download CV</a>
       </div>
-      <div class="hero-socials">
+      <div class="hero-socials enter" style="--d:1100">
         <a href="mailto:arifjeermukki@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
         <a href="https://wa.me/971502271599" target="_blank" rel="noopener" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
         <a href="https://linkedin.com/in/mahammad-arif-g-a-83595a222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
@@ -58,151 +116,170 @@
       </div>
     </div>
 
-    <div class="hero-visual">
-      <div class="window">
-        <div class="window-bar">
-          <div class="window-dots"><span></span><span></span><span></span></div>
-          <div class="window-tabs">
-            <button class="tab-btn active" data-tab="dev">dev.js</button>
-            <button class="tab-btn" data-tab="growth">growth.chart</button>
-          </div>
-        </div>
-
-        <div class="window-body">
-          <pre class="code-pane active" data-pane="dev"><code><span class="c-kw">const</span> <span class="c-var">arif</span> = {
-  <span class="c-key">roles</span>: [<span class="c-str">'Full Stack Dev'</span>, <span class="c-str">'Digital Marketer'</span>],
-  <span class="c-key">based</span>: <span class="c-str">'Dubai, UAE'</span>,
-  <span class="c-key">stack</span>: [<span class="c-str">'React'</span>, <span class="c-str">'WordPress'</span>, <span class="c-str">'Node'</span>, <span class="c-str">'Java'</span>],
-  <span class="c-key">marketing</span>: [<span class="c-str">'SEO'</span>, <span class="c-str">'Google Ads'</span>, <span class="c-str">'Meta Ads'</span>],
-  <span class="c-key">experience</span>: <span class="c-str">'3+ years'</span>,
-  <span class="c-key">status</span>: <span class="c-str">'available_for_freelance'</span>
-};</code></pre>
-
-          <div class="chart-pane" data-pane="growth">
-            <p class="chart-caption">Illustrative impact of SEO &amp; ad optimization work</p>
-            <div class="chart-row">
-              <span class="chart-label">Organic Traffic</span>
-              <div class="chart-bars">
-                <div class="bar base" style="--h:32%"><span>Before</span></div>
-                <div class="bar opt" style="--h:78%"><span>After</span></div>
-              </div>
-            </div>
-            <div class="chart-row">
-              <span class="chart-label">Ad CTR</span>
-              <div class="chart-bars">
-                <div class="bar base" style="--h:24%"><span>Before</span></div>
-                <div class="bar opt" style="--h:64%"><span>After</span></div>
-              </div>
-            </div>
-            <div class="chart-row">
-              <span class="chart-label">Leads / Conversions</span>
-              <div class="chart-bars">
-                <div class="bar base" style="--h:20%"><span>Before</span></div>
-                <div class="bar opt" style="--h:70%"><span>After</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="hero-visual enter" style="--d:500">
+      <div class="photo-card">
+        <img src="profile.jpg" alt="Portrait of Mahammad Arif G A" width="1000" height="1000" fetchpriority="high">
       </div>
-
-      <div class="floating-chip chip-1"><i class='bx bxl-wordpress'></i> WooCommerce</div>
-      <div class="floating-chip chip-2"><i class='bx bx-trending-up'></i> SEO / SEM</div>
-      <div class="floating-chip chip-3"><i class='bx bxl-react'></i> React</div>
+      <div class="layer fc-award" data-depth="26">
+        <div class="float-card"><i class='bx bx-medal'></i><div><strong>Excellence Award</strong><span>Digital Marketing · May 2026</span></div></div>
+      </div>
+      <div class="layer fc-exp" data-depth="-22">
+        <div class="float-card"><i class='bx bx-time-five'></i><div><strong>3+ years</strong><span>Building &amp; growing sites</span></div></div>
+      </div>
+      <div class="layer fc-roles" data-depth="18">
+        <div class="float-card"><i class='bx bx-briefcase-alt-2'></i><div><strong>5 roles</strong><span>Dev · Marketing · Training</span></div></div>
+      </div>
+      <div class="layer chip-1" data-depth="-30"><span class="chip"><i class='bx bxl-wordpress'></i> WooCommerce</span></div>
+      <div class="layer chip-2" data-depth="34"><span class="chip"><i class='bx bx-trending-up'></i> SEO / SEM</span></div>
+      <div class="layer chip-3" data-depth="-18"><span class="chip"><i class='bx bxl-react'></i> React</span></div>
     </div>
   </div>
-  <a href="#about" class="scroll-cue" aria-label="Scroll to about"><i class='bx bx-chevron-down'></i></a>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about"></a>
 </section>
 
 <!-- ================= MARQUEE ================= -->
-<div class="marquee">
+<div class="marquee" aria-hidden="true">
   <div class="marquee-track">
     <span>WordPress</span><i class='bx bx-diamond'></i>
     <span>WooCommerce</span><i class='bx bx-diamond'></i>
-    <span>React</span><i class='bx bx-diamond'></i>
-    <span>SEO / SEM</span><i class='bx bx-diamond'></i>
+    <span>SEO</span><i class='bx bx-diamond'></i>
     <span>Google Ads</span><i class='bx bx-diamond'></i>
     <span>Meta Ads</span><i class='bx bx-diamond'></i>
-    <span>Java</span><i class='bx bx-diamond'></i>
     <span>Email Marketing</span><i class='bx bx-diamond'></i>
-    <span>WordPress</span><i class='bx bx-diamond'></i>
-    <span>WooCommerce</span><i class='bx bx-diamond'></i>
+    <span>Content Marketing</span><i class='bx bx-diamond'></i>
+    <span>Amazon &amp; Noon</span><i class='bx bx-diamond'></i>
+  </div>
+</div>
+<div class="marquee rev" aria-hidden="true">
+  <div class="marquee-track">
     <span>React</span><i class='bx bx-diamond'></i>
-    <span>SEO / SEM</span><i class='bx bx-diamond'></i>
-    <span>Google Ads</span><i class='bx bx-diamond'></i>
-    <span>Meta Ads</span><i class='bx bx-diamond'></i>
+    <span>JavaScript</span><i class='bx bx-diamond'></i>
     <span>Java</span><i class='bx bx-diamond'></i>
-    <span>Email Marketing</span><i class='bx bx-diamond'></i>
+    <span>Python</span><i class='bx bx-diamond'></i>
+    <span>Node.js</span><i class='bx bx-diamond'></i>
+    <span>Photoshop</span><i class='bx bx-diamond'></i>
+    <span>DaVinci Resolve</span><i class='bx bx-diamond'></i>
+    <span>Canva</span><i class='bx bx-diamond'></i>
   </div>
 </div>
 
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
-  <p class="section-eyebrow">01 — About</p>
-  <div class="about-grid reveal">
-    <div class="about-avatar">
-      <div class="avatar-frame">
-        <img src="profile.png" alt="Mahammad Arif G A">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">01 — About</p>
+      <h2 class="section-title reveal-words">Two disciplines, one outcome: sites that work <em>and</em> sell.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text glass reveal" data-r="left">
+        <p>I'm a Computer Science engineering graduate (KVG College of Engineering) who started out writing Java and React code, then moved into e-commerce marketing — and found the combination more useful than either skill alone.</p>
+        <p>Right now at <strong>Navar Furniture</strong> in Dubai, I own the WordPress &amp; WooCommerce build end-to-end, and I'm also the one running the SEO, Google and Meta Ads, email campaigns, social media and marketplace listings that bring traffic to it — then reading the analytics to see whether it actually converted.</p>
+        <p>Before that I trained new developers, built React front-ends at BB Leads, and worked as a Java full-stack intern at KodNest — so the code side isn't a side project, it's where I started. I'm passionate about delivering innovative solutions that enhance user experience, strengthen brand presence and drive business growth.</p>
       </div>
-      <ul class="quick-facts">
+      <ul class="quick-facts glass reveal" data-r="right">
         <li><i class='bx bx-map'></i> Dubai, UAE</li>
-        <li><i class='bx bx-briefcase'></i> 3+ years experience</li>
+        <li><i class='bx bx-briefcase'></i> 3+ years of experience</li>
         <li><i class='bx bx-graduation'></i> B.E. Computer Science · 8.0 CGPA</li>
         <li><i class='bx bx-target-lock'></i> Full-stack builds + e-commerce growth</li>
+        <li><i class='bx bx-store-alt'></i> WordPress &amp; WooCommerce specialist</li>
       </ul>
     </div>
-    <div class="about-text">
-      <h2>Two disciplines, one outcome: sites that work <em>and</em> sell.</h2>
-      <p>I'm a Computer Science engineering graduate (KVG College of Engineering) who started out writing Java and React code, then moved into e-commerce marketing — and found the combination more useful than either skill alone. Right now at Navar Furniture in Dubai, I own the WordPress &amp; WooCommerce build end-to-end, and I'm also the one running the SEO, Google/Meta Ads, and marketplace listings that bring traffic to it.</p>
-      <p>Before that, I trained developers, built React front-ends at BB Leads, and worked as a Java full-stack intern at KodNest — so the code side isn't a side project, it's where I started. I like sitting at the intersection: I can ship the landing page and then tell you, from the analytics, whether it actually converted.</p>
-    </div>
-  </div>
 
-  <div class="stats-strip reveal">
-    <div class="stat"><span class="stat-num" data-target="3" data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
-    <div class="stat"><span class="stat-num" data-target="5" data-suffix="">0</span><span class="stat-label">Companies &amp; Trainings</span></div>
-    <div class="stat"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label">Certifications</span></div>
-    <div class="stat"><span class="stat-num" data-target="8.0" data-suffix="">0</span><span class="stat-label">CGPA / 10</span></div>
+    <div class="stats-strip" data-stagger>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="3" data-suffix="+">0+</span></span><span class="stat-label">Years of experience</span></div>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Roles &amp; trainings</span></div>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Certificates &amp; awards</span></div>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="8.0" data-decimals="1">0.0</span></span><span class="stat-label">CGPA out of 10</span></div>
+    </div>
+
+    <h3 class="sub-heading reveal">Results in numbers</h3>
+    <p class="sub-note reveal">Measured outcomes from my development roles.</p>
+    <div class="metrics" data-stagger>
+      <div class="metric glass spot">
+        <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:50"/></svg><div class="ring-num"><span class="count" data-target="50" data-suffix="%">0%</span></div></div>
+        <h3>Rise in brand visibility</h3>
+        <p>Striking UI for multi-page and one-page websites.</p>
+        <span class="where">BB Leads</span>
+      </div>
+      <div class="metric glass spot">
+        <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:30"/></svg><div class="ring-num"><span class="count" data-target="30" data-suffix="%">0%</span></div></div>
+        <h3>Faster page loads</h3>
+        <p>Apps optimised for speed and scalability.</p>
+        <span class="where">KodNest Technologies</span>
+      </div>
+      <div class="metric glass spot">
+        <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:20"/></svg><div class="ring-num"><span class="count" data-target="20" data-suffix="%">0%</span></div></div>
+        <h3>Higher system performance</h3>
+        <p>Overall system performance increase after optimisation.</p>
+        <span class="where">KodNest Technologies</span>
+      </div>
+      <div class="metric glass spot">
+        <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:20"/></svg><div class="ring-num"><span class="count" data-target="20" data-suffix="%">0%</span></div></div>
+        <h3>Build efficiency gain</h3>
+        <p>Faster creation of web apps through Bootstrap proficiency.</p>
+        <span class="where">BB Leads</span>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
 <section class="section alt" id="skills">
-  <p class="section-eyebrow">02 — Skills</p>
-  <h2 class="section-title reveal">What I bring to a project</h2>
-
-  <div class="skills-grid reveal stagger-parent">
-    <div class="skill-card stagger-child">
-      <div class="skill-card-head">
-        <i class='bx bx-code-curly'></i>
-        <h3>Development</h3>
-      </div>
-      <div class="tag-list">
-        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span>
-        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">React</span><span class="tag">WordPress</span>
-        <span class="tag">WooCommerce</span><span class="tag">Node.js</span><span class="tag">Git / GitHub</span><span class="tag">VS Code</span>
-      </div>
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">02 — Technical Skills</p>
+      <h2 class="section-title reveal-words">What I bring to a project</h2>
+      <p class="section-sub reveal">Engineering, marketing, design and video — all under one roof.</p>
     </div>
 
-    <div class="skill-card stagger-child">
-      <div class="skill-card-head">
-        <i class='bx bx-trending-up'></i>
-        <h3>Digital Marketing</h3>
+    <div class="skills-grid" data-stagger>
+      <div class="skill-card glass spot" style="--c:var(--amber)">
+        <div class="skill-card-head"><i class='bx bx-trending-up'></i><h3>Digital Marketing</h3></div>
+        <div class="tag-list">
+          <span class="tag">Google Ads</span><span class="tag">Meta Ads</span><span class="tag">SEO</span><span class="tag">SEM</span>
+          <span class="tag">PPC</span><span class="tag">SMM</span><span class="tag">Content Marketing</span><span class="tag">Email Marketing</span>
+          <span class="tag">Mailchimp</span><span class="tag">Klaviyo</span>
+        </div>
       </div>
-      <div class="tag-list">
-        <span class="tag">Google Ads</span><span class="tag">Meta Ads</span><span class="tag">SEO</span><span class="tag">SEM</span>
-        <span class="tag">PPC</span><span class="tag">SMM</span><span class="tag">Email Marketing</span><span class="tag">Mailchimp</span>
-        <span class="tag">Klaviyo</span><span class="tag">Google Analytics</span><span class="tag">Merchant Center</span><span class="tag">Amazon / Noon Seller</span>
-      </div>
-    </div>
 
-    <div class="skill-card stagger-child">
-      <div class="skill-card-head">
-        <i class='bx bx-palette'></i>
-        <h3>Design &amp; Content</h3>
+      <div class="skill-card glass spot" style="--c:var(--pink)">
+        <div class="skill-card-head"><i class='bx bx-palette'></i><h3>Graphic Design</h3></div>
+        <div class="tag-list">
+          <span class="tag">Photoshop</span><span class="tag">Adobe Illustrator</span><span class="tag">Canva</span>
+        </div>
       </div>
-      <div class="tag-list">
-        <span class="tag">Photoshop</span><span class="tag">Illustrator</span><span class="tag">Canva</span>
-        <span class="tag">DaVinci Resolve</span><span class="tag">CapCut</span><span class="tag">AI Video Creation</span>
+
+      <div class="skill-card glass spot" style="--c:var(--violet)">
+        <div class="skill-card-head"><i class='bx bx-video'></i><h3>Video Editing</h3></div>
+        <div class="tag-list">
+          <span class="tag">DaVinci Resolve</span><span class="tag">CapCut PC &amp; Mobile</span><span class="tag">AI Video Creation</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass spot" style="--c:var(--cyan)">
+        <div class="skill-card-head"><i class='bx bx-code-curly'></i><h3>Languages</h3></div>
+        <div class="tag-list">
+          <span class="tag">Java</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass spot" style="--c:#5aa9ff">
+        <div class="skill-card-head"><i class='bx bx-wrench'></i><h3>Dev Tools</h3></div>
+        <div class="tag-list">
+          <span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Visual Studio Code</span>
+          <span class="tag">Eclipse</span><span class="tag">GitHub</span><span class="tag">React</span><span class="tag">Node.js</span>
+        </div>
+      </div>
+
+      <div class="skill-card glass spot" style="--c:var(--amber)">
+        <div class="skill-card-head"><i class='bx bx-line-chart'></i><h3>E-commerce, Analytics &amp; Google Tools</h3></div>
+        <div class="tag-list">
+          <span class="tag">Amazon UAE Seller</span><span class="tag">Noon Seller</span><span class="tag">Product listings &amp; catalog</span>
+          <span class="tag">Google Analytics</span><span class="tag">Google Merchant Center</span><span class="tag">Google Business Profile</span>
+          <span class="tag">Landing pages &amp; CRO</span><span class="tag">Technical SEO</span>
+        </div>
       </div>
     </div>
   </div>
@@ -210,177 +287,283 @@
 
 <!-- ================= EXPERIENCE ================= -->
 <section class="section" id="experience">
-  <p class="section-eyebrow">03 — Experience</p>
-  <h2 class="section-title reveal">Where I've worked</h2>
-
-  <div class="timeline reveal stagger-parent">
-
-    <div class="timeline-item stagger-child">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-date">Jul 2025 — Present</span>
-        <h3>Digital Marketing Executive</h3>
-        <p class="timeline-company">Navar Furniture · Dubai, UAE</p>
-        <ul>
-          <li>Built and maintain the company's WordPress &amp; WooCommerce site, including on-page, off-page and technical SEO.</li>
-          <li>Run Google Ads and Meta Ads campaigns, plus Amazon UAE and Noon seller accounts end-to-end.</li>
-          <li>Own email marketing (Mailchimp, Klaviyo), social content, and Google Analytics / Merchant Center reporting.</li>
-          <li>Won the Digital Marketing Excellence Award, May 2026.</li>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">03 — Experience</p>
+      <h2 class="section-title reveal-words">Where I've worked</h2>
     </div>
 
-    <div class="timeline-item stagger-child">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-date">Mar 2025 — Jun 2025</span>
-        <h3>Digital Marketing &amp; Graphic Design (Training)</h3>
-        <p class="timeline-company">Adsin · Calicut, India</p>
-        <ul>
-          <li>Trained across multi-channel campaigns: social, email, SEO/SEM, and content creation.</li>
-          <li>Produced marketing visuals in Photoshop, Illustrator, and Canva aligned to campaign goals.</li>
-        </ul>
-      </div>
+    <div class="chip-filters reveal" role="group" aria-label="Filter experience">
+      <button class="chip-btn" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip-btn" data-filter="marketing" aria-pressed="false">Marketing</button>
+      <button class="chip-btn" data-filter="development" aria-pressed="false">Development</button>
+      <button class="chip-btn" data-filter="training" aria-pressed="false">Training</button>
     </div>
 
-    <div class="timeline-item stagger-child">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-date">Jul 2024 — Feb 2025</span>
-        <h3>Coding Trainer</h3>
-        <p class="timeline-company">Sambhav Foundation · Bangalore, India</p>
-        <ul>
-          <li>Taught programming fundamentals through lectures and hands-on coding sessions.</li>
-          <li>Assessed learners via quizzes and projects, and mentored those stuck on concepts or bugs.</li>
-        </ul>
-      </div>
-    </div>
+    <div class="timeline">
+      <div class="timeline-line" aria-hidden="true"><i></i></div>
 
-    <div class="timeline-item stagger-child">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-date">Apr 2023 — Jun 2024</span>
-        <h3>Front-End Developer</h3>
-        <p class="timeline-company">BB Leads · Mangalore, India</p>
-        <ul>
-          <li>Built multi-page and one-page websites with HTML, CSS, JavaScript and React.</li>
-          <li>Improved UI consistency using Bootstrap, speeding up delivery of new pages.</li>
-        </ul>
-      </div>
-    </div>
+      <article class="t-item reveal" data-cat="marketing development">
+        <div class="t-dot"></div>
+        <div class="t-card glass spot">
+          <div class="t-top"><span class="t-date">Jul 2025 — Present</span><span class="t-badge">Current</span></div>
+          <h3>Digital Marketing Executive</h3>
+          <p class="t-company"><strong>Navar Furniture</strong> · Dubai, UAE</p>
+          <ul>
+            <li>Developed and optimized the company's <b>WordPress &amp; WooCommerce</b> website.</li>
+            <li>Executed on-page, off-page and technical <b>SEO</b>, including product optimization, to enhance search rankings, increase organic traffic and improve overall website performance.</li>
+            <li>Designed high-converting <b>landing pages</b> and optimized the user experience to increase leads and sales.</li>
+            <li>Managed <b>Google Ads</b> and <b>Meta Ads</b> campaigns to increase website traffic and customer inquiries.</li>
+            <li>Handled all <b>social media</b> accounts — planning content, creating creatives, scheduling posts and monitoring engagement.</li>
+            <li>Managed <b>Amazon UAE</b> and <b>Noon Seller</b> accounts, including product listings, catalog management, pricing and marketplace optimization.</li>
+            <li>Administered Google Business Profile, Google Analytics, Google Merchant Center and other Google tools to monitor performance and improve online visibility.</li>
+            <li>Planned and executed <b>email marketing</b> campaigns using Mailchimp and Klaviyo.</li>
+            <li>Created marketing creatives, graphics and promotional videos for social media, email, digital advertising and branding campaigns, keeping brand identity consistent.</li>
+            <li>Collaborated with management to strengthen the company's digital presence, brand identity and overall online customer experience.</li>
+          </ul>
+          <div class="t-highlight"><i class='bx bx-medal'></i><span><b>Digital Marketing Excellence Award</b> — Navar Furniture, May 2026</span></div>
+        </div>
+      </article>
 
-    <div class="timeline-item stagger-child">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="timeline-date">Oct 2022 — Mar 2023</span>
-        <h3>Java Full Stack Developer — Intern</h3>
-        <p class="timeline-company">KodNest Technologies · Bangalore, India</p>
-        <ul>
-          <li>Diagnosed and fixed front-end and back-end performance bottlenecks.</li>
-          <li>Built server-side logic with Node.js, Python (Django) and Java (Spring).</li>
-        </ul>
-      </div>
-    </div>
+      <article class="t-item reveal" data-cat="marketing training">
+        <div class="t-dot"></div>
+        <div class="t-card glass spot">
+          <div class="t-top"><span class="t-date">Mar 2025 — Jun 2025</span></div>
+          <h3>Digital Marketing &amp; Graphic Designing (Training)</h3>
+          <p class="t-company"><strong>Adsin</strong> · Calicut, India</p>
+          <ul>
+            <li>Developed and executed multi-channel marketing campaigns across social media, email marketing, SEO/SEM and content creation to boost brand visibility and engagement.</li>
+            <li>Used Adobe Creative Suite (Photoshop, Illustrator) and Canva to produce high-quality visuals aligned with marketing objectives.</li>
+            <li>Built a strong understanding of marketing analytics, audience targeting and conversion optimization.</li>
+          </ul>
+        </div>
+      </article>
 
+      <article class="t-item reveal" data-cat="training development">
+        <div class="t-dot"></div>
+        <div class="t-card glass spot">
+          <div class="t-top"><span class="t-date">Jul 2024 — Feb 2025</span></div>
+          <h3>Coding Trainer</h3>
+          <p class="t-company"><strong>Sambhav Foundation</strong> · Bangalore, Karnataka, India</p>
+          <ul>
+            <li>Conducted classes and workshops explaining programming concepts and demonstrating coding practices through lectures, hands-on coding sessions and group activities.</li>
+            <li>Tested students' understanding through quizzes, assignments and projects, giving constructive feedback and grades to help learners improve.</li>
+            <li>Guided students who were struggling with concepts or coding challenges: answering questions, clarifying doubts and providing additional resources.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="t-item reveal" data-cat="development">
+        <div class="t-dot"></div>
+        <div class="t-card glass spot">
+          <div class="t-top"><span class="t-date">Apr 2023 — Jun 2024</span></div>
+          <h3>Front-End Developer</h3>
+          <p class="t-company"><strong>BB Leads</strong> · Mangalore, India</p>
+          <ul>
+            <li>Used HTML, CSS, JavaScript and React to create visually polished, user-friendly web applications.</li>
+            <li>Designed striking UI for multi-page and one-page websites.</li>
+            <li>Grew proficiency in Bootstrap, improving the efficiency of building web applications.</li>
+          </ul>
+          <div class="t-metrics">
+            <div class="t-metric"><b>50%</b><span>rise in brand visibility</span></div>
+            <div class="t-metric"><b>20%</b><span>efficiency improvement</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="t-item reveal" data-cat="development">
+        <div class="t-dot"></div>
+        <div class="t-card glass spot">
+          <div class="t-top"><span class="t-date">Oct 2022 — Mar 2023</span></div>
+          <h3>Java Full Stack Developer — Intern</h3>
+          <p class="t-company"><strong>KodNest Technologies</strong> · Bangalore, India</p>
+          <ul>
+            <li>Identified and resolved performance bottlenecks in both front-end and back-end components.</li>
+            <li>Optimized applications for maximum speed and scalability.</li>
+            <li>Developed server-side logic using Node.js, Python (Django) and Java (Spring).</li>
+          </ul>
+          <div class="t-metrics">
+            <div class="t-metric"><b>30%</b><span>reduction in page load times</span></div>
+            <div class="t-metric"><b>20%</b><span>increase in overall system performance</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
+</section>
 
-  <div class="certs reveal stagger-parent">
-    <h3 class="certs-title">Certifications</h3>
-    <div class="certs-grid">
-      <div class="cert-card stagger-child"><i class='bx bx-medal'></i><div><strong>Digital Marketing Excellence Award</strong><span>Navar Furniture · May 2026</span></div></div>
-      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Graphic Designing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
-      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Digital Marketing</strong><span>Adsin The Learning Hub · 2025</span></div></div>
-      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Professional Video Editing</strong><span>KodNest Technologies · 2025</span></div></div>
-      <div class="cert-card stagger-child"><i class='bx bx-certification'></i><div><strong>Java &amp; Python Full Stack Development</strong><span>KodNest Technologies · 2023</span></div></div>
+<!-- ================= EDUCATION & CERTIFICATES ================= -->
+<section class="section alt" id="education">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">04 — Education &amp; Certificates</p>
+      <h2 class="section-title reveal-words">Learning that backs the work</h2>
+    </div>
+
+    <div class="edu-grid">
+      <div class="edu-card glass spot reveal" data-r="left">
+        <div>
+          <i class='bx bx-graduation edu-icon'></i>
+          <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+          <p class="edu-school">KVG College of Engineering</p>
+          <p class="edu-meta">Sullia, Karnataka, India · Aug 2018 – Aug 2022</p>
+        </div>
+        <div class="edu-ring reveal" data-r="scale">
+          <svg class="ring" viewBox="0 0 100 100" aria-hidden="true" style="width:100%;height:100%"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:80"/></svg>
+          <div class="ring-num"><span><span class="count" data-target="8.0" data-decimals="1">0.0</span></span><small>CGPA / 10</small></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="cert-head reveal">Certificates &amp; awards</h3>
+        <div class="certs-grid" data-stagger>
+          <div class="cert-card award glass">
+            <i class='bx bx-medal'></i>
+            <div><strong>Digital Marketing Excellence Award</strong><span>From Navar Furniture · Dubai, UAE</span></div>
+            <span class="cert-date">May 2026</span>
+          </div>
+          <div class="cert-card glass">
+            <i class='bx bx-certification'></i>
+            <div><strong>Graphic Designing</strong><span>Adsin The Learning Hub · Calicut, Kerala</span></div>
+            <span class="cert-date">May – Jun 2025</span>
+          </div>
+          <div class="cert-card glass">
+            <i class='bx bx-certification'></i>
+            <div><strong>Digital Marketing</strong><span>Adsin The Learning Hub · Calicut, Kerala</span></div>
+            <span class="cert-date">Mar – Apr 2025</span>
+          </div>
+          <div class="cert-card glass">
+            <i class='bx bx-certification'></i>
+            <div><strong>Professional Video Editing — PC &amp; Mobile</strong><span>KodNest Technologies · Tamil Nadu</span></div>
+            <span class="cert-date">Nov 2024 – Feb 2025</span>
+          </div>
+          <div class="cert-card glass">
+            <i class='bx bx-certification'></i>
+            <div><strong>Java and Python Full Stack Development</strong><span>KodNest Technologies · Bangalore, Karnataka</span></div>
+            <span class="cert-date">Oct 2022 – Mar 2023</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ================= WORK ================= -->
-<section class="section alt" id="work">
-  <p class="section-eyebrow">04 — Selected Work</p>
-  <div class="section-title-row reveal">
-    <h2 class="section-title">Things I've built</h2>
-    <a href="case-studies.html" class="link-arrow">Read the full case studies <i class='bx bx-right-arrow-alt'></i></a>
-  </div>
-
-  <div class="work-grid reveal stagger-parent">
-    <a class="work-card stagger-child" href="https://travlen.web.app/" target="_blank" rel="noopener">
-      <div class="work-thumb thumb-1"><i class='bx bx-plane'></i></div>
-      <div class="work-body">
-        <h3>Travlen — Travel Agency Site</h3>
-        <p>Static travel agency website with a simple booking flow, built for fast load times across desktop and mobile.</p>
-        <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JS</span></div>
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-head section-head-row">
+      <div>
+        <p class="section-eyebrow reveal">05 — Selected Work</p>
+        <h2 class="section-title reveal-words">Things I've built</h2>
       </div>
-      <i class='bx bx-link-external work-link'></i>
-    </a>
+      <a href="case-studies.html" class="link-arrow reveal">Read the full case studies <i class='bx bx-right-arrow-alt'></i></a>
+    </div>
 
-    <a class="work-card stagger-child" href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">
-      <div class="work-thumb thumb-2"><i class='bx bx-armchair'></i></div>
-      <div class="work-body">
-        <h3>Interior Design Showcase</h3>
-        <p>A visual gallery site for an interior design brand, built to help visitors picture design concepts and connect with services.</p>
-        <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JS</span></div>
-      </div>
-      <i class='bx bx-link-external work-link'></i>
-    </a>
+    <div class="work-grid" data-stagger>
+      <article class="work-card glass spot tilt">
+        <div class="work-thumb thumb-4"><i class='bx bx-store'></i></div>
+        <i class='bx bx-right-arrow-alt work-link' aria-hidden="true"></i>
+        <div class="work-body">
+          <span class="work-kicker">E-commerce &amp; Growth · Jul 2025 — Present</span>
+          <h3><a href="case-studies.html#navar-furniture">Navar Furniture — WooCommerce Build + Growth</a></h3>
+          <p>Owned the WordPress/WooCommerce storefront end-to-end, then grew it with SEO, Google &amp; Meta Ads, email campaigns and Amazon UAE / Noon marketplace listings. Recognised with the 2026 Digital Marketing Excellence Award.</p>
+          <div class="tag-list small"><span class="tag">WooCommerce</span><span class="tag">SEO</span><span class="tag">Google Ads</span><span class="tag">Meta Ads</span></div>
+        </div>
+      </article>
 
-    <a class="work-card stagger-child" href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">
-      <div class="work-thumb thumb-3"><i class='bx bx-hard-hat'></i></div>
-      <div class="work-body">
-        <h3>Labour Hiring Web App</h3>
-        <p>A platform connecting employers with local wage workers for day-to-day tasks — front-end built during Java full-stack training.</p>
-        <div class="tag-list small"><span class="tag">React</span><span class="tag">Java</span></div>
-      </div>
-      <i class='bx bx-link-external work-link'></i>
-    </a>
+      <article class="work-card glass spot tilt">
+        <div class="work-thumb thumb-1"><i class='bx bx-plane'></i></div>
+        <i class='bx bx-link-external work-link' aria-hidden="true"></i>
+        <div class="work-body">
+          <span class="work-kicker">Travel &amp; Booking</span>
+          <h3><a href="https://travlen.web.app/" target="_blank" rel="noopener">Travlen — Travel Agency Site</a></h3>
+          <p>Static travel agency website with a simple booking flow, built for fast load times across desktop and mobile.</p>
+          <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
+          <a class="work-case" href="case-studies.html#travlen">Case study <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+      </article>
+
+      <article class="work-card glass spot tilt">
+        <div class="work-thumb thumb-2"><i class='bx bx-armchair'></i></div>
+        <i class='bx bx-link-external work-link' aria-hidden="true"></i>
+        <div class="work-body">
+          <span class="work-kicker">Interior Design</span>
+          <h3><a href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">Interior Design Showcase</a></h3>
+          <p>A visual gallery site for an interior design brand, built to help visitors picture design concepts and connect with services.</p>
+          <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
+          <a class="work-case" href="case-studies.html#interior-design">Case study <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+      </article>
+
+      <article class="work-card glass spot tilt">
+        <div class="work-thumb thumb-3"><i class='bx bx-hard-hat'></i></div>
+        <i class='bx bxl-github work-link' aria-hidden="true"></i>
+        <div class="work-body">
+          <span class="work-kicker">Marketplace · Full Stack</span>
+          <h3><a href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">Labour Hiring Web App</a></h3>
+          <p>A platform connecting employers with local wage workers for day-to-day tasks — front-end built during Java full-stack training.</p>
+          <div class="tag-list small"><span class="tag">React</span><span class="tag">Java</span></div>
+          <a class="work-case" href="case-studies.html#labour-hiring">Case study <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
 <section class="section" id="contact">
-  <div class="contact-grid reveal">
-    <div class="contact-text">
-      <p class="section-eyebrow">05 — Contact</p>
-      <h2>Have a role or a project in mind?</h2>
-      <p>I'm currently based in Dubai and open to full-time opportunities in full-stack development, digital marketing, or hybrid roles that need both.</p>
-      <ul class="contact-list">
-        <li><i class='bx bx-envelope'></i> <a href="mailto:arifjeermukki@gmail.com">arifjeermukki@gmail.com</a></li>
-        <li><i class='bx bx-phone'></i> <a href="tel:+971502271599">+971 50 227 1599</a></li>
-        <li><i class='bx bx-map'></i> Dubai, UAE</li>
-      </ul>
-      <div class="hero-socials">
-        <a href="https://wa.me/971502271599" target="_blank" rel="noopener" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
-        <a href="https://linkedin.com/in/mahammad-arif-g-a-83595a222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/arifg07" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+  <div class="container">
+    <div class="cta-card glass reveal" data-r="scale">
+      <div class="cta-text">
+        <p class="section-eyebrow">06 — Contact</p>
+        <h2>Have a role or a project in mind?</h2>
+        <p>I'm based in Dubai and open to full-time roles and freelance projects in full-stack development, WordPress/WooCommerce, digital marketing, or hybrid roles that need both.</p>
+        <ul class="contact-list">
+          <li><i class='bx bx-envelope'></i> <a href="mailto:arifjeermukki@gmail.com">arifjeermukki@gmail.com</a> <button type="button" class="copy-btn" data-copy="arifjeermukki@gmail.com"><i class='bx bx-copy'></i> Copy</button></li>
+          <li><i class='bx bx-phone'></i> <a href="tel:+971502271599">+971 50 227 1599</a></li>
+          <li><i class='bx bx-map'></i> Dubai, UAE</li>
+        </ul>
+        <div class="hero-socials">
+          <a href="https://wa.me/971502271599" target="_blank" rel="noopener" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+          <a href="https://linkedin.com/in/mahammad-arif-g-a-83595a222" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/arifg07" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        </div>
       </div>
+
+      <form class="contact-form" id="contactForm">
+        <label for="cf-name">Name</label>
+        <input id="cf-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+
+        <label for="cf-email">Email</label>
+        <input id="cf-email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required>
+
+        <label for="cf-subject">Subject</label>
+        <input id="cf-subject" name="subject" type="text" placeholder="What's this about?">
+
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit about the role or project" required></textarea>
+
+        <button type="submit" class="btn btn-primary full magnetic"><i class='bx bx-paper-plane'></i> Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
     </div>
-
-    <form class="contact-form" id="contactForm">
-      <label for="cf-name">Name</label>
-      <input id="cf-name" name="name" type="text" placeholder="Your name" required>
-
-      <label for="cf-email">Email</label>
-      <input id="cf-email" name="email" type="email" placeholder="you@company.com" required>
-
-      <label for="cf-subject">Subject</label>
-      <input id="cf-subject" name="subject" type="text" placeholder="What's this about?">
-
-      <label for="cf-message">Message</label>
-      <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit about the role or project" required></textarea>
-
-      <button type="submit" class="btn btn-primary full"><i class='bx bx-paper-plane'></i> Send message</button>
-      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-    </form>
   </div>
 </section>
+</main>
 
 <footer class="footer">
-  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year"></span></p>
+  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year">2026</span></p>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="resume.html">Resume</a>
+  </nav>
   <a href="#top" class="top-link" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
 </footer>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="script.js"></script>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>

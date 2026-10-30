@@ -4,48 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog — Mahammad Arif G A</title>
-<meta name="description" content="Notes on full-stack development and e-commerce digital marketing, by Mahammad Arif G A.">
+<meta name="description" content="Notes on WooCommerce SEO, paid ads and working as both developer and marketer, by Mahammad Arif G A.">
+<meta name="theme-color" content="#060913">
+<link rel="canonical" href="https://arifg07.github.io/Portfolio/blog.html">
+
+<script>
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    document.documentElement.classList.add('loaded');
+    if (!window.__ready) document.documentElement.classList.add('reveal-all');
+  }, 4200);
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="pages.css">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="logo-512.png">
 </head>
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
-<div class="grain"></div>
 
-<header class="header scrolled" id="header">
-  <a href="index.html#top" class="logo">MA<span class="dot">.</span></a>
-  <nav class="navbar" id="navbar">
+<header class="header" id="header">
+  <a href="index.html#top" class="logo" aria-label="Mahammad Arif — home">MA<span class="dot">.</span></a>
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <a href="index.html#about">About</a>
     <a href="index.html#skills">Skills</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#work">Work</a>
     <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html" aria-current="page">Blog</a>
     <a href="resume.html">Resume</a>
     <a href="index.html#contact">Contact</a>
   </nav>
-  <a href="index.html#contact" class="nav-cta">Let's talk</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+  <a href="index.html#contact" class="nav-cta magnetic">Let's talk</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar">
     <i class='bx bx-menu'></i>
   </button>
 </header>
 
-<main class="page-hero">
-  <p class="section-eyebrow">Blog</p>
-  <h1>Notes from the intersection of code and growth</h1>
-  <p class="page-hero-sub">Short, practical write-ups on WooCommerce, SEO, and running paid campaigns as someone who also builds the site — edit or replace these with your own posts any time.</p>
-</main>
+<main>
+<section class="page-hero">
+  <p class="section-eyebrow enter" style="--d:100">Blog</p>
+  <h1 class="enter" style="--d:200">Notes from the intersection of <em>code</em> and <em>growth</em></h1>
+  <p class="page-hero-sub enter" style="--d:350">Short, practical write-ups on WooCommerce, SEO and running paid campaigns — from someone who also builds the site.</p>
+  <p class="crumbs enter" style="--d:450"><a href="index.html">Home</a> <i class='bx bx-chevron-right'></i> <span>Blog</span></p>
+</section>
 
 <section class="section blog-list">
 
-  <article class="blog-post reveal" id="post-1">
+  <article class="blog-post glass spot reveal" id="post-1">
     <div class="blog-post-meta">
       <span class="tag">SEO</span>
       <span class="blog-date">Jul 2026</span>
@@ -56,7 +70,7 @@
     <p>Technical SEO and product optimization aren't glamorous, but they're the layer everything else sits on. Get that right first, then layer content and backlinks on top.</p>
   </article>
 
-  <article class="blog-post reveal" id="post-2">
+  <article class="blog-post glass spot reveal" id="post-2">
     <div class="blog-post-meta">
       <span class="tag">Paid Ads</span>
       <span class="blog-date">Jun 2026</span>
@@ -67,7 +81,7 @@
     <p>In practice that means running two different content pipelines, not one asset reused everywhere. It also means the metrics you optimize for should differ: search intent traffic can be judged on conversion rate fairly quickly, while social traffic needs a longer view since some of its value shows up as brand recall rather than an immediate sale.</p>
   </article>
 
-  <article class="blog-post reveal" id="post-3">
+  <article class="blog-post glass spot reveal" id="post-3">
     <div class="blog-post-meta">
       <span class="tag">Career</span>
       <span class="blog-date">May 2026</span>
@@ -79,12 +93,20 @@
   </article>
 
 </section>
+</main>
 
 <footer class="footer">
-  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year"></span></p>
+  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year">2026</span></p>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="resume.html">Resume</a>
+  </nav>
   <a href="index.html#top" class="top-link" aria-label="Back to home"><i class='bx bx-home-alt'></i></a>
 </footer>
 
-<script src="script.js"></script>
+<button class="to-top" id="toTop" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
+
+<script src="script.js" defer></script>
 </body>
 </html>

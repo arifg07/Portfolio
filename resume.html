@@ -4,178 +4,202 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume — Mahammad Arif G A</title>
-<meta name="description" content="Resume of Mahammad Arif G A — Full Stack Developer and Digital Marketing Executive based in Dubai, UAE.">
+<meta name="description" content="Resume of Mahammad Arif G A — Digital Marketing Executive, Full Stack Developer and WordPress Developer based in Dubai, UAE.">
+<meta name="theme-color" content="#060913">
+<link rel="canonical" href="https://arifg07.github.io/Portfolio/resume.html">
+
+<script>
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    document.documentElement.classList.add('loaded');
+    if (!window.__ready) document.documentElement.classList.add('reveal-all');
+  }, 4200);
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="resume.css">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="logo-512.png">
 </head>
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
-<header class="header scrolled">
-  <a href="index.html#top" class="logo">MA<span class="dot">.</span></a>
-  <nav class="navbar" id="navbar">
+
+<header class="header" id="header">
+  <a href="index.html#top" class="logo" aria-label="Mahammad Arif — home">MA<span class="dot">.</span></a>
+  <nav class="navbar" id="navbar" aria-label="Primary">
     <a href="index.html#about">About</a>
     <a href="index.html#skills">Skills</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#work">Work</a>
     <a href="case-studies.html">Case Studies</a>
     <a href="blog.html">Blog</a>
+    <a href="resume.html" aria-current="page">Resume</a>
     <a href="index.html#contact">Contact</a>
   </nav>
-  <button class="btn btn-primary no-print" id="printBtn"><i class='bx bx-printer'></i> Save as PDF</button>
-  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+  <a href="index.html#contact" class="nav-cta magnetic">Let's talk</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar">
     <i class='bx bx-menu'></i>
   </button>
 </header>
 
 <main class="resume-page">
-  <div class="resume-sheet">
+  <div class="resume-toolbar no-print">
+    <h1 class="enter" style="--d:100">My <em>resume</em></h1>
+    <div class="resume-actions enter" style="--d:250">
+      <a class="btn btn-ghost magnetic" href="Mahammad Arif G A [CV-2026].pdf" download><i class='bx bx-download'></i> Download CV (PDF)</a>
+      <button class="btn btn-primary magnetic" id="printBtn" type="button"><i class='bx bx-printer'></i> Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <article class="resume-sheet enter" style="--d:350">
 
     <div class="resume-head">
-      <div class="resume-head-left">
-        <h1>Mahammad Arif G A</h1>
-        <p class="resume-title">Full Stack Developer &amp; Digital Marketing Executive</p>
+      <div>
+        <h2 class="name">Mahammad Arif G A</h2>
+        <p class="resume-title">Digital Marketing Executive <i>|</i> Full Stack Developer <i>|</i> WordPress Developer</p>
         <ul class="resume-contact">
           <li><i class='bx bx-map'></i> Dubai, UAE</li>
-          <li><i class='bx bx-envelope'></i> arifjeermukki@gmail.com</li>
-          <li><i class='bx bx-phone'></i> +971 50 227 1599</li>
-          <li><i class='bx bxl-linkedin'></i> linkedin.com/in/mahammad-arif-g-a-83595a222</li>
-          <li><i class='bx bxl-github'></i> github.com/arifg07</li>
+          <li><i class='bx bx-envelope'></i> <a href="mailto:arifjeermukki@gmail.com">arifjeermukki@gmail.com</a></li>
+          <li><i class='bx bx-phone'></i> <a href="tel:+971502271599">+971 50 227 1599</a></li>
+          <li><i class='bx bxl-linkedin'></i> <a href="https://linkedin.com/in/mahammad-arif-g-a-83595a222" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><i class='bx bxl-github'></i> <a href="https://github.com/arifg07" target="_blank" rel="noopener">GitHub</a></li>
+          <li><i class='bx bx-globe'></i> <a href="https://arifg07.github.io/Portfolio/">Portfolio</a></li>
+          <li><i class='bx bxl-whatsapp'></i> <a href="https://wa.me/971502271599" target="_blank" rel="noopener">WhatsApp</a></li>
         </ul>
       </div>
-      <div class="resume-photo">
-        <img src="profile.png" alt="Mahammad Arif G A">
-      </div>
+      <div class="resume-photo"><img src="profile.jpg" alt="Mahammad Arif G A" width="132" height="132"></div>
     </div>
 
-    <section class="resume-section">
-      <h2>Summary</h2>
-      <p>Full Stack Developer and Digital Marketing Executive with 3+ years of experience building websites and executing digital marketing campaigns. Experienced in developing high-converting web solutions, improving online visibility, managing marketing initiatives, and creating engaging digital content.</p>
+    <section class="resume-section reveal">
+      <h3 class="sec">Summary</h3>
+      <p>Results-driven Full Stack Developer and Digital Marketing Executive with 3+ years of experience building websites and executing digital marketing campaigns. Experienced in developing high-converting web solutions, improving online visibility, managing marketing initiatives and creating engaging digital content. Passionate about delivering innovative solutions that enhance user experience, strengthen brand presence and drive business growth.</p>
     </section>
 
-    <section class="resume-section">
-      <h2>Experience</h2>
+    <section class="resume-section reveal">
+      <h3 class="sec">Results</h3>
+      <div class="resume-results">
+        <div class="resume-result"><b>50%</b><span>rise in brand visibility</span><small>BB Leads</small></div>
+        <div class="resume-result"><b>30%</b><span>reduction in page load times</span><small>KodNest Technologies</small></div>
+        <div class="resume-result"><b>20%</b><span>increase in overall system performance</span><small>KodNest Technologies</small></div>
+        <div class="resume-result"><b>20%</b><span>improvement in build efficiency</span><small>BB Leads</small></div>
+      </div>
+    </section>
+
+    <section class="resume-section reveal">
+      <h3 class="sec">Technical Skills</h3>
+      <div class="resume-skill-row"><strong>Digital Marketing</strong><span>Google Ads, Meta Ads, SEO, SEM, PPC, SMM, Content Marketing, Email Marketing</span></div>
+      <div class="resume-skill-row"><strong>Graphic Design</strong><span>Photoshop, Adobe Illustrator, Canva Designing</span></div>
+      <div class="resume-skill-row"><strong>Video Editing</strong><span>DaVinci Resolve, CapCut PC &amp; Mobile, AI Video Creation</span></div>
+      <div class="resume-skill-row"><strong>Languages</strong><span>Java, C, C++, Python, HTML, CSS, JavaScript</span></div>
+      <div class="resume-skill-row"><strong>Dev Tools</strong><span>WordPress, Visual Studio Code, Eclipse, GitHub</span></div>
+    </section>
+
+    <section class="resume-section reveal">
+      <h3 class="sec">Experience</h3>
 
       <div class="resume-entry">
-        <div class="resume-entry-head">
-          <h3>Digital Marketing Executive</h3>
-          <span>Jul 2025 — Present</span>
-        </div>
+        <div class="resume-entry-head"><h4>Digital Marketing Executive</h4><span>Jul 2025 – Present</span></div>
         <p class="resume-org">Navar Furniture · Dubai, UAE</p>
         <ul>
-          <li>Developed and optimized the company's WordPress &amp; WooCommerce website.</li>
-          <li>Executed on-page, off-page, and technical SEO, including product optimization, to grow organic traffic and improve site performance.</li>
-          <li>Designed high-converting landing pages and improved UX to increase leads and sales.</li>
-          <li>Managed Google Ads and Meta Ads campaigns to grow traffic and customer inquiries.</li>
-          <li>Handled all social media accounts — content planning, creatives, scheduling, and engagement monitoring.</li>
-          <li>Managed Amazon UAE and Noon Seller accounts, including listings, catalog, pricing, and marketplace optimization.</li>
-          <li>Administered Google Business Profile, Analytics, and Merchant Center to track performance.</li>
-          <li>Planned and executed email marketing campaigns using Mailchimp and Klaviyo.</li>
-          <li>Produced marketing creatives, graphics, and promotional videos across channels.</li>
+          <li>Developed and optimized the company's <b>WordPress &amp; WooCommerce</b> website.</li>
+          <li>Executed on-page, off-page and technical <b>SEO</b> initiatives, including product optimization, to enhance search rankings, increase organic traffic and improve overall website performance.</li>
+          <li>Designed high-converting <b>landing pages</b> and optimized the user experience to increase leads and sales.</li>
+          <li>Managed <b>Google Ads</b> and <b>Meta Ads</b> campaigns to increase website traffic and customer inquiries.</li>
+          <li>Handled all <b>social media</b> accounts: planning content, creating creatives, scheduling posts and monitoring engagement.</li>
+          <li>Managed <b>Amazon UAE</b> and <b>Noon Seller</b> accounts, including product listings, catalog management, pricing and marketplace optimization.</li>
+          <li>Administered Google Business Profile, Google Analytics, Google Merchant Center and other Google tools to monitor performance and improve online visibility.</li>
+          <li>Planned and executed <b>email marketing</b> campaigns using Mailchimp and Klaviyo.</li>
+          <li>Created engaging marketing creatives, graphics and promotional videos for social media, email marketing, digital advertising and branding campaigns, ensuring consistent brand identity and audience engagement.</li>
+          <li>Collaborated with management to strengthen the company's digital presence, brand identity and overall online customer experience.</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="resume-entry-head">
-          <h3>Digital Marketing &amp; Graphic Designing (Training)</h3>
-          <span>Mar 2025 — Jun 2025</span>
-        </div>
+        <div class="resume-entry-head"><h4>Digital Marketing &amp; Graphic Designing (Training)</h4><span>Mar 2025 – Jun 2025</span></div>
         <p class="resume-org">Adsin · Calicut, India</p>
         <ul>
-          <li>Developed and executed multi-channel campaigns spanning social media, email, SEO/SEM, and content creation.</li>
-          <li>Produced marketing visuals using Adobe Photoshop, Illustrator, and Canva.</li>
+          <li>Skilled in developing and executing multi-channel marketing campaigns, including social media, email marketing, SEO/SEM and content creation, to boost brand visibility and engagement.</li>
+          <li>Proficient in design tools like Adobe Creative Suite (Photoshop, Illustrator) and Canva to produce high-quality visuals that align with marketing objectives.</li>
+          <li>Strong understanding of marketing analytics, audience targeting and conversion optimization.</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="resume-entry-head">
-          <h3>Coding Trainer</h3>
-          <span>Jul 2024 — Feb 2025</span>
-        </div>
-        <p class="resume-org">Sambhav Foundation · Bangalore, India</p>
+        <div class="resume-entry-head"><h4>Coding Trainer</h4><span>Jul 2024 – Feb 2025</span></div>
+        <p class="resume-org">Sambhav Foundation · Bangalore, Karnataka, India</p>
         <ul>
-          <li>Conducted classes and workshops explaining programming concepts through lectures and hands-on sessions.</li>
-          <li>Assessed learners through quizzes, assignments, and projects, and provided feedback.</li>
-          <li>Mentored students struggling with coding challenges.</li>
+          <li>Conducted classes and workshops explaining programming concepts and demonstrating coding practices through lectures, hands-on coding sessions and group activities.</li>
+          <li>Tested students' understanding through quizzes, assignments and projects, providing constructive feedback and grades to help learners improve.</li>
+          <li>Offered guidance to students struggling with concepts or coding challenges: answering questions, clarifying doubts and providing additional resources.</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="resume-entry-head">
-          <h3>Front-End Developer</h3>
-          <span>Apr 2023 — Jun 2024</span>
-        </div>
+        <div class="resume-entry-head"><h4>Front-End Developer</h4><span>Apr 2023 – Jun 2024</span></div>
         <p class="resume-org">BB Leads · Mangalore, India</p>
         <ul>
-          <li>Built multi-page and one-page websites using HTML, CSS, JavaScript, and React.</li>
-          <li>Improved delivery efficiency by enhancing proficiency in Bootstrap.</li>
+          <li>Utilized HTML, CSS, JavaScript and React expertise to create visually stunning and user-friendly web applications.</li>
+          <li>Formulated visually striking UI for multi-page and one-page websites, resulting in a <b>50% rise in brand visibility</b>.</li>
+          <li>Demonstrated growth by enhancing proficiency in Bootstrap, resulting in a <b>20% improvement</b> in the efficiency of creating effective online applications.</li>
         </ul>
       </div>
 
       <div class="resume-entry">
-        <div class="resume-entry-head">
-          <h3>Java Full Stack Developer — Intern</h3>
-          <span>Oct 2022 — Mar 2023</span>
-        </div>
+        <div class="resume-entry-head"><h4>Java Full Stack Developer — Intern</h4><span>Oct 2022 – Mar 2023</span></div>
         <p class="resume-org">KodNest Technologies · Bangalore, India</p>
         <ul>
-          <li>Identified and resolved front-end and back-end performance bottlenecks.</li>
-          <li>Developed server-side logic using Node.js, Python (Django), and Java (Spring).</li>
+          <li>Identified and resolved performance bottlenecks in both front-end and back-end components.</li>
+          <li>Optimized applications for maximum speed and scalability, resulting in a <b>30% reduction in page load times</b> and a <b>20% increase in overall system performance</b>.</li>
+          <li>Developed server-side logic using languages like Node.js, Python (Django) and Java (Spring).</li>
         </ul>
       </div>
     </section>
 
-    <div class="resume-cols">
-      <section class="resume-section">
-        <h2>Education</h2>
-        <div class="resume-entry">
-          <div class="resume-entry-head">
-            <h3>B.E. Computer Science &amp; Engineering</h3>
-            <span>2018 — 2022</span>
-          </div>
-          <p class="resume-org">KVG College of Engineering, Sullia, Karnataka</p>
-          <p class="resume-cgpa">CGPA — 8.0 / 10</p>
-        </div>
-      </section>
-
-      <section class="resume-section">
-        <h2>Certifications</h2>
-        <ul class="resume-plain-list">
-          <li><strong>Digital Marketing Excellence Award</strong> — Navar Furniture, May 2026</li>
-          <li><strong>Graphic Designing</strong> — Adsin The Learning Hub, 2025</li>
-          <li><strong>Digital Marketing</strong> — Adsin The Learning Hub, 2025</li>
-          <li><strong>Professional Video Editing (PC &amp; Mobile)</strong> — KodNest Technologies, 2025</li>
-          <li><strong>Java &amp; Python Full Stack Development</strong> — KodNest Technologies, 2023</li>
-        </ul>
-      </section>
-    </div>
-
-    <section class="resume-section">
-      <h2>Skills</h2>
-      <div class="resume-skill-row"><strong>Digital Marketing</strong> Google Ads · Meta Ads · SEO · SEM · PPC · SMM · Content Marketing · Email Marketing</div>
-      <div class="resume-skill-row"><strong>Development</strong> Java · Python · C · C++ · HTML · CSS · JavaScript · React · WordPress · WooCommerce · Node.js</div>
-      <div class="resume-skill-row"><strong>Design &amp; Video</strong> Photoshop · Illustrator · Canva · DaVinci Resolve · CapCut · AI Video Creation</div>
-      <div class="resume-skill-row"><strong>Tools</strong> VS Code · Eclipse · GitHub · Google Analytics · Google Merchant Center</div>
+    <section class="resume-section reveal">
+      <h3 class="sec">Education</h3>
+      <div class="resume-entry">
+        <div class="resume-entry-head"><h4>Bachelor of Engineering in Computer Science and Engineering</h4><span>Aug 2018 – Aug 2022</span></div>
+        <p class="resume-org">KVG College of Engineering · Sullia, Karnataka, India</p>
+        <p class="resume-cgpa">CGPA – 8.0 / 10</p>
+      </div>
     </section>
 
-  </div>
+    <section class="resume-section reveal">
+      <h3 class="sec">Certificates</h3>
+      <div class="resume-cert-list">
+        <div class="resume-cert"><div><strong>1. Java and Python Full Stack Development</strong><em>From KodNest Technologies</em></div><div class="when">Oct 2022 – Mar 2023<small>Bangalore, Karnataka, India</small></div></div>
+        <div class="resume-cert"><div><strong>2. Professional Video Editing — PC &amp; Mobile</strong><em>From KodNest Technologies</em></div><div class="when">Nov 2024 – Feb 2025<small>Tamil Nadu, India</small></div></div>
+        <div class="resume-cert"><div><strong>3. Digital Marketing</strong><em>From Adsin The Learning Hub</em></div><div class="when">Mar 2025 – Apr 2025<small>Calicut, Kerala, India</small></div></div>
+        <div class="resume-cert"><div><strong>4. Graphic Designing</strong><em>From Adsin The Learning Hub</em></div><div class="when">May 2025 – Jun 2025<small>Calicut, Kerala, India</small></div></div>
+        <div class="resume-cert award"><div><strong>5. Digital Marketing Excellence Award</strong><em>From Navar Furniture</em></div><div class="when">May 2026<small>Dubai, UAE</small></div></div>
+      </div>
+    </section>
+
+  </article>
 </main>
 
 <footer class="footer no-print">
-  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year"></span></p>
+  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year">2026</span></p>
+  <nav class="footer-links" aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+  </nav>
   <a href="index.html#top" class="top-link" aria-label="Back to home"><i class='bx bx-home-alt'></i></a>
 </footer>
 
-<script src="script.js"></script>
+<button class="to-top no-print" id="toTop" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
+
+<script src="script.js" defer></script>
 <script>
-  document.getElementById("printBtn").addEventListener("click", () => window.print());
+  document.getElementById('printBtn').addEventListener('click', function () { window.print(); });
 </script>
 </body>
 </html>
