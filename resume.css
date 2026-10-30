@@ -27,7 +27,7 @@
 .resume-contact i { color: #7C6CFF; font-size: 17px; }
 .resume-contact a:hover { color: #4a3fd1; text-decoration: underline; }
 .resume-photo { flex: none; width: 132px; height: 132px; border-radius: 50%; padding: 4px; background: conic-gradient(from var(--ang), #34D8C7, #7C6CFF, #FF7AC8, #34D8C7); animation: spinAng 8s linear infinite; }
-.resume-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 3px solid #fbfbfe; background: #0b1020; }
+.resume-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; border-radius: 50%; border: 3px solid #fbfbfe; background: #1f6a85; }
 
 .resume-section { margin-top: 30px; }
 .resume-section h3.sec {
