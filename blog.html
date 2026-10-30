@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog — Mahammad Arif G A</title>
-<meta name="description" content="Notes on WooCommerce SEO, paid ads and working as both developer and marketer, by Mahammad Arif G A.">
+<title>Blog | Mahammad Arif G A</title>
+<meta name="description" content="Short notes on WooCommerce SEO, paid ads and doing both the building and the marketing, by Mahammad Arif G A.">
 <meta name="theme-color" content="#060913">
 <link rel="canonical" href="https://arifg07.github.io/Portfolio/blog.html">
 
 <script>
   document.documentElement.classList.add('js');
+  try { if (sessionStorage.getItem('wipe')) document.documentElement.classList.add('wipe-in'); } catch (e) {}
   setTimeout(function () {
     document.documentElement.classList.add('loaded');
     if (!window.__ready) document.documentElement.classList.add('reveal-all');
@@ -22,6 +23,7 @@
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="pages.css">
+<link rel="stylesheet" href="fx.css">
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="logo-512.png">
@@ -31,7 +33,7 @@
 <div class="scroll-progress" id="scrollProgress"></div>
 
 <header class="header" id="header">
-  <a href="index.html#top" class="logo" aria-label="Mahammad Arif — home">MA<span class="dot">.</span></a>
+  <a href="index.html#top" class="logo" aria-label="Mahammad Arif, home">MA<span class="dot">.</span></a>
   <nav class="navbar" id="navbar" aria-label="Primary">
     <a href="index.html#about">About</a>
     <a href="index.html#skills">Skills</a>
@@ -52,8 +54,8 @@
 <main>
 <section class="page-hero">
   <p class="section-eyebrow enter" style="--d:100">Blog</p>
-  <h1 class="enter" style="--d:200">Notes from the intersection of <em>code</em> and <em>growth</em></h1>
-  <p class="page-hero-sub enter" style="--d:350">Short, practical write-ups on WooCommerce, SEO and running paid campaigns — from someone who also builds the site.</p>
+  <h1 class="enter" style="--d:200">Notes on <em>code</em> and <em>growth</em></h1>
+  <p class="page-hero-sub enter" style="--d:350">Short write-ups on WooCommerce, SEO and ads, from someone who also builds the sites.</p>
   <p class="crumbs enter" style="--d:450"><a href="index.html">Home</a> <i class='bx bx-chevron-right'></i> <span>Blog</span></p>
 </section>
 
@@ -64,10 +66,10 @@
       <span class="tag">SEO</span>
       <span class="blog-date">Jul 2026</span>
     </div>
-    <h2>Why your WooCommerce SEO should start with the product page, not the blog</h2>
-    <p>Most WooCommerce SEO advice starts with content marketing — write blog posts, build backlinks, wait. In practice, the fastest wins usually come from the product pages themselves, because that's what's actually meant to rank and convert.</p>
-    <p>Three things I check first on any store: whether the product title and meta description actually contain the terms a buyer would search (not just the brand's internal naming), whether product images have descriptive alt text, and whether the page loads fast on mobile — WooCommerce sites get slow quickly once you add a few marketing plugins on top of the theme. Fixing those three before touching content usually moves organic traffic more than a month of blog posts.</p>
-    <p>Technical SEO and product optimization aren't glamorous, but they're the layer everything else sits on. Get that right first, then layer content and backlinks on top.</p>
+    <h2>Fix the product pages before you write blog posts</h2>
+    <p>When someone asks me how to get a WooCommerce store ranking, I look at the product pages first. They're the pages that are supposed to rank and sell, so small fixes there pay off fastest.</p>
+    <p>My checklist is short. Does the title use words a buyer would actually type? Do the images have proper alt text? Does the page load quickly on a phone? Stores get slow fast once a few marketing plugins pile up on top of the theme.</p>
+    <p>Blog posts and backlinks matter too. I just do them after the basics are sorted.</p>
   </article>
 
   <article class="blog-post glass spot reveal" id="post-2">
@@ -75,10 +77,10 @@
       <span class="tag">Paid Ads</span>
       <span class="blog-date">Jun 2026</span>
     </div>
-    <h2>Running Google and Meta Ads for the same store: what actually changes</h2>
-    <p>It's tempting to treat Google Ads and Meta Ads as the same job with a different dashboard. They're not — the intent is different, and the creative that works on one usually underperforms on the other.</p>
-    <p>On Google Search, people are already looking for the product — the ad's job is to be the most relevant, trustworthy-looking answer to a search they've already decided to make. On Meta, nobody was looking for you; the ad has to stop a scroll and create the want in the first place, which means the creative carries far more weight than the copy.</p>
-    <p>In practice that means running two different content pipelines, not one asset reused everywhere. It also means the metrics you optimize for should differ: search intent traffic can be judged on conversion rate fairly quickly, while social traffic needs a longer view since some of its value shows up as brand recall rather than an immediate sale.</p>
+    <h2>Google Ads and Meta Ads are not the same job</h2>
+    <p>People search on Google when they already want something, so the ad only has to look like the right answer. On Meta nobody was looking for you. The ad has to stop the scroll before anything else can happen.</p>
+    <p>That changes what I make. Google ads lean on the wording. Meta ads lean on the creative, so the image or the video does most of the work.</p>
+    <p>It also changes how I judge results. Search traffic shows pretty quickly whether it converts. Social needs a longer look, because part of its value is people remembering the brand later.</p>
   </article>
 
   <article class="blog-post glass spot reveal" id="post-3">
@@ -86,17 +88,17 @@
       <span class="tag">Career</span>
       <span class="blog-date">May 2026</span>
     </div>
-    <h2>What changes when the developer also owns the marketing</h2>
-    <p>I started as a full-stack developer and moved into digital marketing almost by accident — a role needed someone who could do both. What surprised me is how much faster the feedback loop gets when the same person builds the landing page and reads the analytics on it.</p>
-    <p>Normally there's a handoff: a developer ships a page, a marketer runs traffic to it, and any mismatch between the two takes a meeting to surface and a sprint to fix. When it's the same person, you notice a page isn't converting and can go straight to the fix — sometimes that's a copy change, sometimes it's genuinely a loading-speed problem the marketing side would never have diagnosed.</p>
-    <p>I don't think everyone needs to learn both disciplines. But if you're early in either career, spending real time on the other side — even briefly — makes you noticeably better at your actual job.</p>
+    <h2>What it's like when the developer does the marketing too</h2>
+    <p>I started out as a developer and moved into marketing later. These days I build the pages and I also read the numbers on them.</p>
+    <p>The nice part is how short the feedback loop gets. If a landing page isn't converting, I don't need a meeting to work out why. Sometimes the copy is wrong. Sometimes the page is just slow, and a marketer on their own might never spot that.</p>
+    <p>You don't have to master both. But if you're early in either one, spending a little time on the other side will make you better at your own job.</p>
   </article>
 
 </section>
 </main>
 
 <footer class="footer">
-  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year">2026</span></p>
+  <p>Designed and built by Mahammad Arif G A · © <span id="year">2026</span></p>
   <nav class="footer-links" aria-label="Footer">
     <a href="index.html">Home</a>
     <a href="case-studies.html">Case Studies</a>
@@ -108,5 +110,6 @@
 <button class="to-top" id="toTop" aria-label="Back to top"><i class='bx bx-chevron-up'></i></button>
 
 <script src="script.js" defer></script>
+<script src="fx.js" defer></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* =========================================================
-   Mahammad Arif G A — portfolio interactions
+   Mahammad Arif G A: portfolio interactions
    Every block is guarded, so the same file runs on all pages.
 ========================================================= */
 (() => {
@@ -52,11 +52,12 @@
   const showPage = () => root.classList.add('loaded');
   function finishPreloader() {
     if (!pre) { showPage(); return; }
-    const wait = reduced ? 0 : Math.max(0, 1100 - (performance.now() - t0));
+    if (root.classList.contains('wipe-in')) { pre.remove(); showPage(); return; }
+    const wait = reduced ? 0 : Math.max(0, 1750 - (performance.now() - t0));
     setTimeout(() => {
       pre.classList.add('done');
       showPage();
-      setTimeout(() => pre.remove(), 900);
+      setTimeout(() => pre.remove(), 1300);
     }, wait);
   }
   if (document.readyState === 'complete') finishPreloader();
@@ -105,11 +106,12 @@
   if (window.Typed && $('.typed-wrap .text') && !reduced) {
     new Typed('.typed-wrap .text', {
       strings: [
-        'high-converting WooCommerce stores.',
-        'SEO-ready WordPress websites.',
-        'scalable React web apps.',
-        'data-driven Google & Meta ad campaigns.',
-        'landing pages that turn visits into leads.'
+        'WooCommerce stores that sell.',
+        'WordPress sites that rank.',
+        'React apps.',
+        'Google and Meta ad campaigns.',
+        'landing pages that bring in leads.',
+        'ad creatives and short videos.'
       ],
       typeSpeed: 48, backSpeed: 24, backDelay: 1500, startDelay: 900, loop: true
     });
@@ -413,7 +415,7 @@
       const message = f['message'].value.trim();
       const body = `Name: ${name}\nEmail: ${email}\n\n${message}`;
       window.location.href = `mailto:arifjeermukki@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      if (status) status.textContent = 'Opening your email app to send this message…';
+      if (status) status.textContent = 'Opening your email app so you can send this.';
     });
   }
 
