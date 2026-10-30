@@ -1,5 +1,5 @@
 /* =========================================================
-   Resume page — a light "paper" sheet over the dark site
+   Resume page: a light "paper" sheet over the dark site
 ========================================================= */
 .resume-page { max-width: 960px; margin: 0 auto; padding: 150px 5% 100px; }
 .resume-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 28px; }

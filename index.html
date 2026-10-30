@@ -3,20 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mahammad Arif G A — Digital Marketing Executive, Full Stack &amp; WordPress Developer</title>
-<meta name="description" content="Portfolio of Mahammad Arif G A — Digital Marketing Executive, Full Stack Developer and WordPress Developer in Dubai, UAE. WooCommerce, SEO, Google &amp; Meta Ads, React and Java.">
+<title>Mahammad Arif G A | Digital Marketing Executive, Full Stack and WordPress Developer</title>
+<meta name="description" content="Portfolio of Mahammad Arif G A, a digital marketing executive, full stack developer and WordPress developer in Dubai, UAE. WooCommerce, SEO, Google and Meta Ads, React and Java.">
 <meta name="theme-color" content="#060913">
 <link rel="canonical" href="https://arifg07.github.io/Portfolio/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mahammad Arif G A — Digital Marketing Executive &amp; Full Stack Developer">
-<meta property="og:description" content="WordPress &amp; WooCommerce builds, SEO, paid media and React — based in Dubai, UAE.">
+<meta property="og:title" content="Mahammad Arif G A | Digital Marketing Executive and Full Stack Developer">
+<meta property="og:description" content="WordPress and WooCommerce builds, SEO, paid ads and React. Based in Dubai, UAE.">
 <meta property="og:url" content="https://arifg07.github.io/Portfolio/">
 <meta property="og:image" content="https://arifg07.github.io/Portfolio/profile.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <script>
   document.documentElement.classList.add('js');
+  try { if (sessionStorage.getItem('wipe')) document.documentElement.classList.add('wipe-in'); } catch (e) {}
   /* safety net: never leave content hidden if the main script fails */
   setTimeout(function () {
     document.documentElement.classList.add('loaded');
@@ -29,6 +30,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="fx.css">
 
 <link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.ico" sizes="any">
@@ -39,7 +41,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Mahammad Arif G A",
-  "jobTitle": "Digital Marketing Executive & Full Stack Developer",
+  "jobTitle": "Digital Marketing Executive and Full Stack Developer",
   "url": "https://arifg07.github.io/Portfolio/",
   "image": "https://arifg07.github.io/Portfolio/profile.jpg",
   "email": "mailto:arifjeermukki@gmail.com",
@@ -60,15 +62,30 @@
   </defs>
 </svg>
 
+<!-- clapperboard preloader -->
 <div class="preloader" id="preloader" aria-hidden="true">
-  <div class="pre-mark">MA<span>.</span></div>
-  <div class="pre-bar"><i></i></div>
+  <i class="pre-door t"></i><i class="pre-door b"></i>
+  <i class="pre-flash"></i>
+  <div class="pre-stage">
+    <div class="clap">
+      <div class="clap-top"></div>
+      <div class="clap-bar"></div>
+      <div class="clap-body">
+        <div><span>PROD</span><b>Portfolio</b></div>
+        <div><span>ROLL</span><b>MA-2026</b></div>
+        <div><span>SCENE</span><b>01</b></div>
+        <div><span>TAKE</span><b>01</b></div>
+      </div>
+    </div>
+    <div class="pre-tc" id="preTc">00:00:00:00</div>
+    <div class="pre-bar"><i></i></div>
+  </div>
 </div>
 
 <div class="scroll-progress" id="scrollProgress"></div>
 
 <header class="header" id="header">
-  <a href="#top" class="logo" aria-label="Mahammad Arif — home">MA<span class="dot">.</span></a>
+  <a href="#top" class="logo" aria-label="Mahammad Arif, home">MA<span class="dot">.</span></a>
   <nav class="navbar" id="navbar" aria-label="Primary">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
@@ -92,7 +109,7 @@
   <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow enter" style="--d:100"><span class="pulse-dot"></span> Dubai, UAE · Open to new opportunities</p>
+      <p class="eyebrow enter" style="--d:100"><span class="pulse-dot"></span> Dubai, UAE · open to work</p>
       <h1 class="hero-name">
         <span class="line split">Mahammad</span>
         <span class="line grad-text">Arif G A</span>
@@ -102,10 +119,10 @@
         <li>Full Stack Developer</li>
         <li>WordPress Developer</li>
       </ul>
-      <h2 class="hero-role enter" style="--d:800">I build <span class="typed-wrap"><span class="text">high-converting WooCommerce stores.</span></span></h2>
-      <p class="hero-sub enter" style="--d:900">Results-driven developer and marketer with 3+ years of experience building websites and running digital marketing campaigns. I deliver solutions that improve user experience, strengthen brand presence and drive business growth.</p>
+      <h2 class="hero-role enter" style="--d:800">I make <span class="typed-wrap"><span class="text">WooCommerce stores that sell.</span></span></h2>
+      <p class="hero-sub enter" style="--d:900">I'm Arif. I build websites, run the SEO and ads that bring people to them, and make the graphics and videos that go with it. I've been doing this for over three years.</p>
       <div class="hero-actions enter" style="--d:1000">
-        <a href="#work" class="btn btn-primary magnetic"><i class='bx bx-code-alt'></i> View my work</a>
+        <a href="#work" class="btn btn-primary magnetic"><i class='bx bx-code-alt'></i> See my work</a>
         <a href="Mahammad Arif G A [CV-2026].pdf" class="btn btn-ghost magnetic" download><i class='bx bx-download'></i> Download CV</a>
       </div>
       <div class="hero-socials enter" style="--d:1100">
@@ -119,12 +136,18 @@
     <div class="hero-visual enter" style="--d:500">
       <div class="photo-card">
         <img src="profile.jpg" alt="Portrait of Mahammad Arif G A" width="1000" height="1000" fetchpriority="high">
+        <div class="vf" aria-hidden="true">
+          <i class="vf-c tl"></i><i class="vf-c tr"></i><i class="vf-c bl"></i><i class="vf-c br"></i>
+          <span class="vf-rec"><b></b>REC <em id="recTc">00:00:00:00</em></span>
+          <span class="vf-meta">f/1.8 · 1/60 · ISO 400</span>
+          <span class="vf-af"></span>
+        </div>
       </div>
       <div class="layer fc-award" data-depth="26">
         <div class="float-card"><i class='bx bx-medal'></i><div><strong>Excellence Award</strong><span>Digital Marketing · May 2026</span></div></div>
       </div>
       <div class="layer fc-exp" data-depth="-22">
-        <div class="float-card"><i class='bx bx-time-five'></i><div><strong>3+ years</strong><span>Building &amp; growing sites</span></div></div>
+        <div class="float-card"><i class='bx bx-time-five'></i><div><strong>3+ years</strong><span>Building and marketing sites</span></div></div>
       </div>
       <div class="layer fc-roles" data-depth="18">
         <div class="float-card"><i class='bx bx-briefcase-alt-2'></i><div><strong>5 roles</strong><span>Dev · Marketing · Training</span></div></div>
@@ -134,7 +157,7 @@
       <div class="layer chip-3" data-depth="-18"><span class="chip"><i class='bx bxl-react'></i> React</span></div>
     </div>
   </div>
-  <a href="#about" class="scroll-cue" aria-label="Scroll to about"></a>
+  <a href="#statement" class="scroll-cue" aria-label="Scroll down"></a>
 </section>
 
 <!-- ================= MARQUEE ================= -->
@@ -163,74 +186,192 @@
   </div>
 </div>
 
+<!-- ================= STATEMENT (words light up as you scroll) ================= -->
+<section class="statement" id="statement" aria-label="In short">
+  <p class="fill-text" id="fillText">I write the <b class="k1">code</b>, design the <b class="k2">creatives</b> and cut the <b class="k3">videos</b>. Then I check the <b class="k4">analytics</b> to see what actually worked.</p>
+</section>
+
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
   <div class="container">
     <div class="section-head">
-      <p class="section-eyebrow reveal">01 — About</p>
-      <h2 class="section-title reveal-words">Two disciplines, one outcome: sites that work <em>and</em> sell.</h2>
+      <p class="section-eyebrow reveal">01 // About</p>
+      <h2 class="section-title reveal-words">I build websites, and I market them too.</h2>
     </div>
 
     <div class="about-grid">
       <div class="about-text glass reveal" data-r="left">
-        <p>I'm a Computer Science engineering graduate (KVG College of Engineering) who started out writing Java and React code, then moved into e-commerce marketing — and found the combination more useful than either skill alone.</p>
-        <p>Right now at <strong>Navar Furniture</strong> in Dubai, I own the WordPress &amp; WooCommerce build end-to-end, and I'm also the one running the SEO, Google and Meta Ads, email campaigns, social media and marketplace listings that bring traffic to it — then reading the analytics to see whether it actually converted.</p>
-        <p>Before that I trained new developers, built React front-ends at BB Leads, and worked as a Java full-stack intern at KodNest — so the code side isn't a side project, it's where I started. I'm passionate about delivering innovative solutions that enhance user experience, strengthen brand presence and drive business growth.</p>
+        <p>I studied Computer Science at KVG College of Engineering and started out writing Java and React. Later I moved into e-commerce marketing, and the mix turned out to be more useful than either skill on its own.</p>
+        <p>At <strong>Navar Furniture</strong> in Dubai I built the WordPress and WooCommerce site myself. I also run the SEO, the Google and Meta ads, the email campaigns, the social accounts and the Amazon UAE and Noon listings. Then I open Google Analytics and see whether any of it worked.</p>
+        <p>Before that I taught coding at Sambhav Foundation, built React front-ends at BB Leads and did a Java full stack internship at KodNest. I also design in Photoshop and Illustrator and edit video in DaVinci Resolve and CapCut, and I've done courses in both.</p>
       </div>
-      <ul class="quick-facts glass reveal" data-r="right">
-        <li><i class='bx bx-map'></i> Dubai, UAE</li>
-        <li><i class='bx bx-briefcase'></i> 3+ years of experience</li>
-        <li><i class='bx bx-graduation'></i> B.E. Computer Science · 8.0 CGPA</li>
-        <li><i class='bx bx-target-lock'></i> Full-stack builds + e-commerce growth</li>
-        <li><i class='bx bx-store-alt'></i> WordPress &amp; WooCommerce specialist</li>
-      </ul>
+      <div class="about-side">
+        <figure class="media about-media reveal" data-r="right">
+          <span class="media-art" aria-hidden="true"><i class='bx bx-desktop'></i></span>
+          <img class="rv-img" src="img/about-desk.jpg" alt="A desk with code, a design app and a video timeline open on the screens" width="1200" height="900" loading="lazy" decoding="async" onerror="this.remove()">
+        </figure>
+        <ul class="quick-facts glass reveal" data-r="right">
+          <li><i class='bx bx-map'></i> Dubai, UAE</li>
+          <li><i class='bx bx-briefcase'></i> 3+ years of experience</li>
+          <li><i class='bx bx-graduation'></i> B.E. Computer Science, 8.0 CGPA</li>
+          <li><i class='bx bx-target-lock'></i> Websites, SEO, ads and design</li>
+          <li><i class='bx bx-store-alt'></i> WordPress and WooCommerce</li>
+        </ul>
+      </div>
     </div>
 
     <div class="stats-strip" data-stagger>
       <div class="stat glass"><span class="stat-num"><span class="count" data-target="3" data-suffix="+">0+</span></span><span class="stat-label">Years of experience</span></div>
-      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Roles &amp; trainings</span></div>
-      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Certificates &amp; awards</span></div>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Roles and trainings</span></div>
+      <div class="stat glass"><span class="stat-num"><span class="count" data-target="5">0</span></span><span class="stat-label">Certificates and awards</span></div>
       <div class="stat glass"><span class="stat-num"><span class="count" data-target="8.0" data-decimals="1">0.0</span></span><span class="stat-label">CGPA out of 10</span></div>
     </div>
 
     <h3 class="sub-heading reveal">Results in numbers</h3>
-    <p class="sub-note reveal">Measured outcomes from my development roles.</p>
+    <p class="sub-note reveal">Numbers from my two developer roles.</p>
     <div class="metrics" data-stagger>
       <div class="metric glass spot">
         <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:50"/></svg><div class="ring-num"><span class="count" data-target="50" data-suffix="%">0%</span></div></div>
         <h3>Rise in brand visibility</h3>
-        <p>Striking UI for multi-page and one-page websites.</p>
+        <p>Came from the UI I built for multi-page and one-page websites.</p>
         <span class="where">BB Leads</span>
       </div>
       <div class="metric glass spot">
         <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:30"/></svg><div class="ring-num"><span class="count" data-target="30" data-suffix="%">0%</span></div></div>
-        <h3>Faster page loads</h3>
-        <p>Apps optimised for speed and scalability.</p>
+        <h3>Shorter page load times</h3>
+        <p>From fixing bottlenecks in front-end and back-end code.</p>
         <span class="where">KodNest Technologies</span>
       </div>
       <div class="metric glass spot">
         <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:20"/></svg><div class="ring-num"><span class="count" data-target="20" data-suffix="%">0%</span></div></div>
-        <h3>Higher system performance</h3>
-        <p>Overall system performance increase after optimisation.</p>
+        <h3>Better system performance</h3>
+        <p>The same optimisation work, measured across the whole system.</p>
         <span class="where">KodNest Technologies</span>
       </div>
       <div class="metric glass spot">
         <div class="ring-wrap"><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:20"/></svg><div class="ring-num"><span class="count" data-target="20" data-suffix="%">0%</span></div></div>
-        <h3>Build efficiency gain</h3>
-        <p>Faster creation of web apps through Bootstrap proficiency.</p>
+        <h3>Faster to build apps</h3>
+        <p>Getting good with Bootstrap sped up how I build web apps.</p>
         <span class="where">BB Leads</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SKILLS ================= -->
-<section class="section alt" id="skills">
+<!-- ================= THREE CRAFTS ================= -->
+<section class="section alt" id="crafts">
   <div class="container">
     <div class="section-head">
-      <p class="section-eyebrow reveal">02 — Technical Skills</p>
-      <h2 class="section-title reveal-words">What I bring to a project</h2>
-      <p class="section-sub reveal">Engineering, marketing, design and video — all under one roof.</p>
+      <p class="section-eyebrow reveal">02 // Three crafts</p>
+      <h2 class="section-title reveal-words">Developer. Designer. <em>Editor.</em></h2>
+      <p class="section-sub reveal">Most of my work sits somewhere between these three.</p>
+    </div>
+
+    <div class="crafts" data-stagger>
+      <!-- DEVELOPER -->
+      <article class="craft glass spot" data-craft="code">
+        <div class="win-bar"><span class="win-dots"><i></i><i></i><i></i></span><span class="win-title">arif.js</span></div>
+        <div class="win-body code-body">
+          <pre class="code" id="codeDemo" aria-label="A short JavaScript object describing Arif"><code>const arif = {
+  based: "Dubai, UAE",
+  roles: ["Dev", "Designer", "Editor"],
+  stack: ["WordPress", "React", "Java"],
+  tools: ["Photoshop", "Resolve"],
+  experience: "3+ years",
+  openToWork: true,
+};</code></pre>
+        </div>
+        <div class="craft-foot">
+          <h3><i class='bx bx-code-alt'></i> Developer</h3>
+          <p>WordPress and WooCommerce sites, React front-ends, and some Java and Node.js on the back end.</p>
+        </div>
+      </article>
+
+      <!-- DESIGNER -->
+      <article class="craft glass spot" data-craft="design">
+        <div class="win-bar"><span class="win-dots"><i></i><i></i><i></i></span><span class="win-title">logo-draft.svg</span></div>
+        <div class="win-body design-body">
+          <svg class="pen-svg" id="penSvg" viewBox="0 0 320 180" role="img" aria-label="A shape being drawn with the pen tool">
+            <defs>
+              <linearGradient id="penGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#34D8C7"/><stop offset=".55" stop-color="#7C6CFF"/><stop offset="1" stop-color="#FF7AC8"/>
+              </linearGradient>
+            </defs>
+            <path class="pen-fill" id="penFill" d="M60 112 C40 56 110 18 170 38 C230 58 290 38 280 100 C272 146 200 166 150 152 C110 142 80 166 60 112 Z"/>
+            <g class="pen-handles" id="penHandles">
+              <g data-a="1"><line x1="110" y1="18" x2="230" y2="58"/><circle cx="110" cy="18" r="3.4"/><circle cx="230" cy="58" r="3.4"/></g>
+              <g data-a="2"><line x1="290" y1="38" x2="272" y2="146"/><circle cx="290" cy="38" r="3.4"/><circle cx="272" cy="146" r="3.4"/></g>
+              <g data-a="3"><line x1="200" y1="166" x2="110" y2="142"/><circle cx="200" cy="166" r="3.4"/><circle cx="110" cy="142" r="3.4"/></g>
+            </g>
+            <path class="pen-path" id="penPath" d="M60 112 C40 56 110 18 170 38 C230 58 290 38 280 100 C272 146 200 166 150 152 C110 142 80 166 60 112 Z"/>
+            <g class="pen-anchors" id="penAnchors">
+              <rect x="55" y="107" width="10" height="10" rx="1.5"/>
+              <rect x="165" y="33" width="10" height="10" rx="1.5"/>
+              <rect x="275" y="95" width="10" height="10" rx="1.5"/>
+              <rect x="145" y="147" width="10" height="10" rx="1.5"/>
+            </g>
+            <g id="penNib" class="pen-nib"><path d="M0 0 L-6 -11 L-3 -22 L3 -22 L6 -11 Z"/><circle cx="0" cy="-13" r="1.6"/></g>
+          </svg>
+          <ul class="swatches" aria-label="Brand colour swatches">
+            <li style="--sw:#34D8C7;--i:0"><span>#34D8C7</span></li>
+            <li style="--sw:#7C6CFF;--i:1"><span>#7C6CFF</span></li>
+            <li style="--sw:#FF7AC8;--i:2"><span>#FF7AC8</span></li>
+            <li style="--sw:#F0A93B;--i:3"><span>#F0A93B</span></li>
+            <li style="--sw:#0A1020;--i:4"><span>#0A1020</span></li>
+          </ul>
+        </div>
+        <div class="craft-foot">
+          <h3><i class='bx bx-palette'></i> Designer</h3>
+          <p>Creatives, social posts and landing page visuals, made in Photoshop, Illustrator and Canva.</p>
+        </div>
+      </article>
+
+      <!-- EDITOR -->
+      <article class="craft glass spot" data-craft="edit">
+        <div class="win-bar"><span class="win-dots"><i></i><i></i><i></i></span><span class="win-title">promo-cut.drp</span></div>
+        <div class="win-body edit-body" id="editDemo">
+          <div class="mon"><span class="mon-tc" id="monTc">00:00:00:00</span><i class='bx bx-play'></i><div class="mon-bar"></div></div>
+          <div class="nle" id="nle">
+            <div class="nle-ruler"><i>0s</i><i>2s</i><i>4s</i><i>6s</i><i>8s</i></div>
+            <div class="nle-track"><span class="clip ct" style="--l:8%;--w:26%;--i:3">Title</span><span class="clip ct" style="--l:60%;--w:24%;--i:4">Lower third</span></div>
+            <div class="nle-track"><span class="clip c1" style="--l:0%;--w:34%;--i:0">Intro</span><span class="clip c2" style="--l:35%;--w:38%;--i:1">B-roll</span><span class="clip c3" style="--l:74%;--w:26%;--i:2">Outro</span></div>
+            <div class="nle-track a1"><div class="wf" id="wf"></div><div class="wf lit" id="wfLit"></div></div>
+            <div class="nle-head"></div>
+          </div>
+        </div>
+        <div class="craft-foot">
+          <h3><i class='bx bx-movie-play'></i> Editor</h3>
+          <p>Promo videos and short edits in DaVinci Resolve and CapCut, on desktop and mobile.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- before / after grade -->
+    <div class="grade glass reveal" data-r="scale">
+      <div class="grade-copy">
+        <p class="mini-eyebrow">Colour grading</p>
+        <h3>Same frame, two looks</h3>
+        <p>Drag the handle. Flat on the left, graded on the right. Here it's only a CSS filter on my own photo, but it's the same idea as grading footage in DaVinci Resolve.</p>
+        <div class="scopes" id="scopes" aria-hidden="true"></div>
+      </div>
+      <div class="grade-stage" id="gradeStage" data-cursor="Drag">
+        <img class="g-base" src="profile.jpg" alt="" width="1000" height="1000" loading="lazy" decoding="async">
+        <div class="g-top"><img class="g-after" src="profile.jpg" alt="" width="1000" height="1000" loading="lazy" decoding="async"></div>
+        <span class="g-tag l">Flat</span><span class="g-tag r">Graded</span>
+        <span class="g-line"><i class='bx bx-slider-alt'></i></span>
+        <input type="range" min="0" max="100" value="50" aria-label="Compare the flat and graded look of the photo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">03 // Skills</p>
+      <h2 class="section-title reveal-words">What I work with</h2>
+      <p class="section-sub reveal">Code, marketing, design and video. This is the toolbox.</p>
     </div>
 
     <div class="skills-grid" data-stagger>
@@ -274,7 +415,7 @@
       </div>
 
       <div class="skill-card glass spot" style="--c:var(--amber)">
-        <div class="skill-card-head"><i class='bx bx-line-chart'></i><h3>E-commerce, Analytics &amp; Google Tools</h3></div>
+        <div class="skill-card-head"><i class='bx bx-line-chart'></i><h3>E-commerce, Analytics and Google Tools</h3></div>
         <div class="tag-list">
           <span class="tag">Amazon UAE Seller</span><span class="tag">Noon Seller</span><span class="tag">Product listings &amp; catalog</span>
           <span class="tag">Google Analytics</span><span class="tag">Google Merchant Center</span><span class="tag">Google Business Profile</span>
@@ -286,10 +427,10 @@
 </section>
 
 <!-- ================= EXPERIENCE ================= -->
-<section class="section" id="experience">
+<section class="section alt" id="experience">
   <div class="container">
     <div class="section-head">
-      <p class="section-eyebrow reveal">03 — Experience</p>
+      <p class="section-eyebrow reveal">04 // Experience</p>
       <h2 class="section-title reveal-words">Where I've worked</h2>
     </div>
 
@@ -306,35 +447,35 @@
       <article class="t-item reveal" data-cat="marketing development">
         <div class="t-dot"></div>
         <div class="t-card glass spot">
-          <div class="t-top"><span class="t-date">Jul 2025 — Present</span><span class="t-badge">Current</span></div>
+          <div class="t-top"><span class="t-date">Jul 2025 - Present</span><span class="t-badge">Current</span></div>
           <h3>Digital Marketing Executive</h3>
           <p class="t-company"><strong>Navar Furniture</strong> · Dubai, UAE</p>
           <ul>
-            <li>Developed and optimized the company's <b>WordPress &amp; WooCommerce</b> website.</li>
-            <li>Executed on-page, off-page and technical <b>SEO</b>, including product optimization, to enhance search rankings, increase organic traffic and improve overall website performance.</li>
-            <li>Designed high-converting <b>landing pages</b> and optimized the user experience to increase leads and sales.</li>
-            <li>Managed <b>Google Ads</b> and <b>Meta Ads</b> campaigns to increase website traffic and customer inquiries.</li>
-            <li>Handled all <b>social media</b> accounts — planning content, creating creatives, scheduling posts and monitoring engagement.</li>
-            <li>Managed <b>Amazon UAE</b> and <b>Noon Seller</b> accounts, including product listings, catalog management, pricing and marketplace optimization.</li>
-            <li>Administered Google Business Profile, Google Analytics, Google Merchant Center and other Google tools to monitor performance and improve online visibility.</li>
-            <li>Planned and executed <b>email marketing</b> campaigns using Mailchimp and Klaviyo.</li>
-            <li>Created marketing creatives, graphics and promotional videos for social media, email, digital advertising and branding campaigns, keeping brand identity consistent.</li>
-            <li>Collaborated with management to strengthen the company's digital presence, brand identity and overall online customer experience.</li>
+            <li>Built and look after the company's <b>WordPress and WooCommerce</b> website.</li>
+            <li>Do on-page, off-page and technical <b>SEO</b>, including optimising individual products, to improve rankings and bring in more organic traffic.</li>
+            <li>Design <b>landing pages</b> and tweak the user experience to get more leads and sales.</li>
+            <li>Run <b>Google Ads</b> and <b>Meta Ads</b> campaigns for website traffic and customer enquiries.</li>
+            <li>Handle every <b>social media</b> account: content planning, creatives, scheduling and watching engagement.</li>
+            <li>Manage the <b>Amazon UAE</b> and <b>Noon Seller</b> accounts, including product listings, catalog, pricing and marketplace optimisation.</li>
+            <li>Look after Google Business Profile, Google Analytics, Google Merchant Center and the other Google tools.</li>
+            <li>Plan and send <b>email marketing</b> campaigns in Mailchimp and Klaviyo.</li>
+            <li>Make graphics and promo videos for social media, email, ads and branding, and keep the brand look consistent.</li>
+            <li>Work with management on the company's online presence and brand.</li>
           </ul>
-          <div class="t-highlight"><i class='bx bx-medal'></i><span><b>Digital Marketing Excellence Award</b> — Navar Furniture, May 2026</span></div>
+          <div class="t-highlight"><i class='bx bx-medal'></i><span><b>Digital Marketing Excellence Award</b> from Navar Furniture, May 2026</span></div>
         </div>
       </article>
 
       <article class="t-item reveal" data-cat="marketing training">
         <div class="t-dot"></div>
         <div class="t-card glass spot">
-          <div class="t-top"><span class="t-date">Mar 2025 — Jun 2025</span></div>
+          <div class="t-top"><span class="t-date">Mar 2025 - Jun 2025</span></div>
           <h3>Digital Marketing &amp; Graphic Designing (Training)</h3>
           <p class="t-company"><strong>Adsin</strong> · Calicut, India</p>
           <ul>
-            <li>Developed and executed multi-channel marketing campaigns across social media, email marketing, SEO/SEM and content creation to boost brand visibility and engagement.</li>
-            <li>Used Adobe Creative Suite (Photoshop, Illustrator) and Canva to produce high-quality visuals aligned with marketing objectives.</li>
-            <li>Built a strong understanding of marketing analytics, audience targeting and conversion optimization.</li>
+            <li>Built and ran multi-channel campaigns across social media, email, SEO/SEM and content to grow brand visibility and engagement.</li>
+            <li>Made visuals in Photoshop, Illustrator and Canva that matched each campaign's goals.</li>
+            <li>Learned marketing analytics, audience targeting and conversion optimisation.</li>
           </ul>
         </div>
       </article>
@@ -342,13 +483,13 @@
       <article class="t-item reveal" data-cat="training development">
         <div class="t-dot"></div>
         <div class="t-card glass spot">
-          <div class="t-top"><span class="t-date">Jul 2024 — Feb 2025</span></div>
+          <div class="t-top"><span class="t-date">Jul 2024 - Feb 2025</span></div>
           <h3>Coding Trainer</h3>
           <p class="t-company"><strong>Sambhav Foundation</strong> · Bangalore, Karnataka, India</p>
           <ul>
-            <li>Conducted classes and workshops explaining programming concepts and demonstrating coding practices through lectures, hands-on coding sessions and group activities.</li>
-            <li>Tested students' understanding through quizzes, assignments and projects, giving constructive feedback and grades to help learners improve.</li>
-            <li>Guided students who were struggling with concepts or coding challenges: answering questions, clarifying doubts and providing additional resources.</li>
+            <li>Taught programming through classes, workshops, lectures and hands-on coding sessions.</li>
+            <li>Set quizzes, assignments and projects, then gave feedback and grades so students could improve.</li>
+            <li>Helped students who were stuck: answered questions, cleared up doubts and shared extra resources.</li>
           </ul>
         </div>
       </article>
@@ -356,13 +497,13 @@
       <article class="t-item reveal" data-cat="development">
         <div class="t-dot"></div>
         <div class="t-card glass spot">
-          <div class="t-top"><span class="t-date">Apr 2023 — Jun 2024</span></div>
+          <div class="t-top"><span class="t-date">Apr 2023 - Jun 2024</span></div>
           <h3>Front-End Developer</h3>
           <p class="t-company"><strong>BB Leads</strong> · Mangalore, India</p>
           <ul>
-            <li>Used HTML, CSS, JavaScript and React to create visually polished, user-friendly web applications.</li>
-            <li>Designed striking UI for multi-page and one-page websites.</li>
-            <li>Grew proficiency in Bootstrap, improving the efficiency of building web applications.</li>
+            <li>Built user-friendly web apps with HTML, CSS, JavaScript and React.</li>
+            <li>Designed the UI for multi-page and one-page websites.</li>
+            <li>Got better at Bootstrap, which made building web apps quicker.</li>
           </ul>
           <div class="t-metrics">
             <div class="t-metric"><b>50%</b><span>rise in brand visibility</span></div>
@@ -374,13 +515,13 @@
       <article class="t-item reveal" data-cat="development">
         <div class="t-dot"></div>
         <div class="t-card glass spot">
-          <div class="t-top"><span class="t-date">Oct 2022 — Mar 2023</span></div>
-          <h3>Java Full Stack Developer — Intern</h3>
+          <div class="t-top"><span class="t-date">Oct 2022 - Mar 2023</span></div>
+          <h3>Java Full Stack Developer (Intern)</h3>
           <p class="t-company"><strong>KodNest Technologies</strong> · Bangalore, India</p>
           <ul>
-            <li>Identified and resolved performance bottlenecks in both front-end and back-end components.</li>
-            <li>Optimized applications for maximum speed and scalability.</li>
-            <li>Developed server-side logic using Node.js, Python (Django) and Java (Spring).</li>
+            <li>Found and fixed performance bottlenecks in both front-end and back-end code.</li>
+            <li>Optimised apps for speed and scalability.</li>
+            <li>Wrote server-side logic in Node.js, Python (Django) and Java (Spring).</li>
           </ul>
           <div class="t-metrics">
             <div class="t-metric"><b>30%</b><span>reduction in page load times</span></div>
@@ -393,11 +534,11 @@
 </section>
 
 <!-- ================= EDUCATION & CERTIFICATES ================= -->
-<section class="section alt" id="education">
+<section class="section" id="education">
   <div class="container">
     <div class="section-head">
-      <p class="section-eyebrow reveal">04 — Education &amp; Certificates</p>
-      <h2 class="section-title reveal-words">Learning that backs the work</h2>
+      <p class="section-eyebrow reveal">05 // Education</p>
+      <h2 class="section-title reveal-words">Education and certificates</h2>
     </div>
 
     <div class="edu-grid">
@@ -406,7 +547,7 @@
           <i class='bx bx-graduation edu-icon'></i>
           <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
           <p class="edu-school">KVG College of Engineering</p>
-          <p class="edu-meta">Sullia, Karnataka, India · Aug 2018 – Aug 2022</p>
+          <p class="edu-meta">Sullia, Karnataka, India · Aug 2018 - Aug 2022</p>
         </div>
         <div class="edu-ring reveal" data-r="scale">
           <svg class="ring" viewBox="0 0 100 100" aria-hidden="true" style="width:100%;height:100%"><circle class="ring-bg" cx="50" cy="50" r="44"/><circle class="ring-fg" cx="50" cy="50" r="44" style="--p:80"/></svg>
@@ -415,7 +556,7 @@
       </div>
 
       <div>
-        <h3 class="cert-head reveal">Certificates &amp; awards</h3>
+        <h3 class="cert-head reveal">Certificates and awards</h3>
         <div class="certs-grid" data-stagger>
           <div class="cert-card award glass">
             <i class='bx bx-medal'></i>
@@ -425,22 +566,22 @@
           <div class="cert-card glass">
             <i class='bx bx-certification'></i>
             <div><strong>Graphic Designing</strong><span>Adsin The Learning Hub · Calicut, Kerala</span></div>
-            <span class="cert-date">May – Jun 2025</span>
+            <span class="cert-date">May - Jun 2025</span>
           </div>
           <div class="cert-card glass">
             <i class='bx bx-certification'></i>
             <div><strong>Digital Marketing</strong><span>Adsin The Learning Hub · Calicut, Kerala</span></div>
-            <span class="cert-date">Mar – Apr 2025</span>
+            <span class="cert-date">Mar - Apr 2025</span>
           </div>
           <div class="cert-card glass">
             <i class='bx bx-certification'></i>
-            <div><strong>Professional Video Editing — PC &amp; Mobile</strong><span>KodNest Technologies · Tamil Nadu</span></div>
-            <span class="cert-date">Nov 2024 – Feb 2025</span>
+            <div><strong>Professional Video Editing, PC &amp; Mobile</strong><span>KodNest Technologies · Tamil Nadu</span></div>
+            <span class="cert-date">Nov 2024 - Feb 2025</span>
           </div>
           <div class="cert-card glass">
             <i class='bx bx-certification'></i>
             <div><strong>Java and Python Full Stack Development</strong><span>KodNest Technologies · Bangalore, Karnataka</span></div>
-            <span class="cert-date">Oct 2022 – Mar 2023</span>
+            <span class="cert-date">Oct 2022 - Mar 2023</span>
           </div>
         </div>
       </div>
@@ -449,63 +590,108 @@
 </section>
 
 <!-- ================= WORK ================= -->
-<section class="section" id="work">
+<section class="section alt" id="work">
   <div class="container">
     <div class="section-head section-head-row">
       <div>
-        <p class="section-eyebrow reveal">05 — Selected Work</p>
+        <p class="section-eyebrow reveal">06 // Selected work</p>
         <h2 class="section-title reveal-words">Things I've built</h2>
       </div>
-      <a href="case-studies.html" class="link-arrow reveal">Read the full case studies <i class='bx bx-right-arrow-alt'></i></a>
+      <a href="case-studies.html" class="link-arrow reveal">Read the case studies <i class='bx bx-right-arrow-alt'></i></a>
     </div>
 
     <div class="work-grid" data-stagger>
-      <article class="work-card glass spot tilt">
-        <div class="work-thumb thumb-4"><i class='bx bx-store'></i></div>
+      <article class="work-card glass spot tilt" data-cursor="Open">
+        <div class="work-thumb thumb-4"><i class='bx bx-store'></i><img class="rv-img" src="img/work-navar.jpg" alt="The Navar Furniture online store shown on a laptop and a phone" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()"></div>
         <i class='bx bx-right-arrow-alt work-link' aria-hidden="true"></i>
         <div class="work-body">
-          <span class="work-kicker">E-commerce &amp; Growth · Jul 2025 — Present</span>
-          <h3><a href="case-studies.html#navar-furniture">Navar Furniture — WooCommerce Build + Growth</a></h3>
-          <p>Owned the WordPress/WooCommerce storefront end-to-end, then grew it with SEO, Google &amp; Meta Ads, email campaigns and Amazon UAE / Noon marketplace listings. Recognised with the 2026 Digital Marketing Excellence Award.</p>
+          <span class="work-kicker">E-commerce and growth · Jul 2025 - Present</span>
+          <h3><a href="case-studies.html#navar-furniture">Navar Furniture: WooCommerce build and growth</a></h3>
+          <p>I built the WooCommerce store, then worked on getting people to it: SEO, Google and Meta ads, email, and listings on Amazon UAE and Noon. The work earned me the Digital Marketing Excellence Award in May 2026.</p>
           <div class="tag-list small"><span class="tag">WooCommerce</span><span class="tag">SEO</span><span class="tag">Google Ads</span><span class="tag">Meta Ads</span></div>
         </div>
       </article>
 
-      <article class="work-card glass spot tilt">
-        <div class="work-thumb thumb-1"><i class='bx bx-plane'></i></div>
+      <article class="work-card glass spot tilt" data-cursor="Open">
+        <div class="work-thumb thumb-1"><i class='bx bx-compass'></i><img class="rv-img" src="img/work-travlen.jpg" alt="The Travlen travel agency website shown on a laptop" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()"></div>
         <i class='bx bx-link-external work-link' aria-hidden="true"></i>
         <div class="work-body">
-          <span class="work-kicker">Travel &amp; Booking</span>
-          <h3><a href="https://travlen.web.app/" target="_blank" rel="noopener">Travlen — Travel Agency Site</a></h3>
-          <p>Static travel agency website with a simple booking flow, built for fast load times across desktop and mobile.</p>
+          <span class="work-kicker">Travel and booking</span>
+          <h3><a href="https://travlen.web.app/" target="_blank" rel="noopener">Travlen: travel agency site</a></h3>
+          <p>A static travel agency website with a simple booking flow. I kept it light so it loads fast on desktop and mobile.</p>
           <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
           <a class="work-case" href="case-studies.html#travlen">Case study <i class='bx bx-right-arrow-alt'></i></a>
         </div>
       </article>
 
-      <article class="work-card glass spot tilt">
-        <div class="work-thumb thumb-2"><i class='bx bx-armchair'></i></div>
+      <article class="work-card glass spot tilt" data-cursor="Open">
+        <div class="work-thumb thumb-2"><i class='bx bx-home-heart'></i><img class="rv-img" src="img/work-interior.jpg" alt="An interior design gallery website shown on a tablet" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()"></div>
         <i class='bx bx-link-external work-link' aria-hidden="true"></i>
         <div class="work-body">
-          <span class="work-kicker">Interior Design</span>
-          <h3><a href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">Interior Design Showcase</a></h3>
-          <p>A visual gallery site for an interior design brand, built to help visitors picture design concepts and connect with services.</p>
+          <span class="work-kicker">Interior design</span>
+          <h3><a href="https://livings-7ded4.web.app/" target="_blank" rel="noopener">Interior design showcase</a></h3>
+          <p>A visual gallery site for an interior design brand. It helps visitors picture design ideas and get in touch for services.</p>
           <div class="tag-list small"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span></div>
           <a class="work-case" href="case-studies.html#interior-design">Case study <i class='bx bx-right-arrow-alt'></i></a>
         </div>
       </article>
 
-      <article class="work-card glass spot tilt">
-        <div class="work-thumb thumb-3"><i class='bx bx-hard-hat'></i></div>
+      <article class="work-card glass spot tilt" data-cursor="Open">
+        <div class="work-thumb thumb-3"><i class='bx bx-hard-hat'></i><img class="rv-img" src="img/work-labour.jpg" alt="A labour hiring web app shown on a laptop" width="1200" height="750" loading="lazy" decoding="async" onerror="this.remove()"></div>
         <i class='bx bxl-github work-link' aria-hidden="true"></i>
         <div class="work-body">
-          <span class="work-kicker">Marketplace · Full Stack</span>
-          <h3><a href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">Labour Hiring Web App</a></h3>
-          <p>A platform connecting employers with local wage workers for day-to-day tasks — front-end built during Java full-stack training.</p>
+          <span class="work-kicker">Marketplace · Full stack</span>
+          <h3><a href="https://github.com/arifg07/LabourHire-FrontEnd" target="_blank" rel="noopener">Labour hiring web app</a></h3>
+          <p>A platform that connects employers with local daily-wage workers for everyday tasks. I built the front end while learning Java full stack.</p>
           <div class="tag-list small"><span class="tag">React</span><span class="tag">Java</span></div>
           <a class="work-case" href="case-studies.html#labour-hiring">Case study <i class='bx bx-right-arrow-alt'></i></a>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY (film strip) ================= -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow reveal">07 // Creative side</p>
+      <h2 class="section-title reveal-words">Frames and concepts</h2>
+      <p class="section-sub reveal">Concept frames and style studies from the design and video side. Hover to pause, click to look closer.</p>
+    </div>
+  </div>
+  <div class="film" id="film">
+    <div class="film-track">
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#7C6CFF;--b:#FF7AC8"><i class='bx bx-image-alt'></i></div>
+        <img src="img/gallery-1.jpg" alt="Concept poster with bold gradient shapes" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>01</span> Poster concept</figcaption>
+      </figure>
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#34D8C7;--b:#5aa9ff"><i class='bx bx-brush'></i></div>
+        <img src="img/gallery-2.jpg" alt="Concept social media creative for a furniture brand" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>02</span> Social creative</figcaption>
+      </figure>
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#F0A93B;--b:#FF7AC8"><i class='bx bx-camera-movie'></i></div>
+        <img src="img/gallery-3.jpg" alt="Cinematic product advert still frame" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>03</span> Ad frame</figcaption>
+      </figure>
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#FF7AC8;--b:#7C6CFF"><i class='bx bx-shape-polygon'></i></div>
+        <img src="img/gallery-4.jpg" alt="Logo exploration board with simple geometric marks" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>04</span> Logo study</figcaption>
+      </figure>
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#5aa9ff;--b:#34D8C7"><i class='bx bx-play-circle'></i></div>
+        <img src="img/gallery-5.jpg" alt="Video thumbnail concept with a bold shape and glow" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>05</span> Video thumbnail</figcaption>
+      </figure>
+      <figure class="frame" data-cursor="View" tabindex="0">
+        <div class="frame-art" style="--a:#34D8C7;--b:#F0A93B"><i class='bx bx-film'></i></div>
+        <img src="img/gallery-6.jpg" alt="Colour graded cinematic still with teal and orange tones" width="800" height="1000" loading="lazy" decoding="async" onerror="this.remove()">
+        <figcaption><span>06</span> Colour grade</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -515,11 +701,11 @@
   <div class="container">
     <div class="cta-card glass reveal" data-r="scale">
       <div class="cta-text">
-        <p class="section-eyebrow">06 — Contact</p>
-        <h2>Have a role or a project in mind?</h2>
-        <p>I'm based in Dubai and open to full-time roles and freelance projects in full-stack development, WordPress/WooCommerce, digital marketing, or hybrid roles that need both.</p>
+        <p class="section-eyebrow">08 // Contact</p>
+        <h2>Got a role or a project in mind?</h2>
+        <p>I'm in Dubai and open to full-time roles and freelance work: full-stack development, WordPress and WooCommerce, digital marketing, or something that mixes them.</p>
         <ul class="contact-list">
-          <li><i class='bx bx-envelope'></i> <a href="mailto:arifjeermukki@gmail.com">arifjeermukki@gmail.com</a> <button type="button" class="copy-btn" data-copy="arifjeermukki@gmail.com"><i class='bx bx-copy'></i> Copy</button></li>
+          <li><i class='bx bx-envelope'></i> <a href="mailto:arifjeermukki@gmail.com">arifjeermukki@gmail.com</a> <button type="button" class="copy-btn" data-copy="arifjeermukki@gmail.com" data-cursor="Copy"><i class='bx bx-copy'></i> Copy</button></li>
           <li><i class='bx bx-phone'></i> <a href="tel:+971502271599">+971 50 227 1599</a></li>
           <li><i class='bx bx-map'></i> Dubai, UAE</li>
         </ul>
@@ -549,10 +735,12 @@
     </div>
   </div>
 </section>
+
+<div class="mega" id="mega" aria-hidden="true"><span class="mega-o">MAHAMMAD ARIF</span><span class="mega-f">MAHAMMAD ARIF</span></div>
 </main>
 
 <footer class="footer">
-  <p>Designed &amp; built by Mahammad Arif G A · © <span id="year">2026</span></p>
+  <p>Designed and built by Mahammad Arif G A · © <span id="year">2026</span></p>
   <nav class="footer-links" aria-label="Footer">
     <a href="case-studies.html">Case Studies</a>
     <a href="blog.html">Blog</a>
@@ -565,5 +753,6 @@
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 <script src="script.js" defer></script>
+<script src="fx.js" defer></script>
 </body>
 </html>
